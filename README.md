@@ -8,14 +8,21 @@ transcrioptome
 
 
 Stylophora pistillata
-Neder et al
-NCBI
+Neder et al ?
+NCBI BioProject: PRJNA725478
+EMBL EBI
+https://www.ebi.ac.uk/ena/browser/view/PRJNA725478
+Genome: http://spis.reefgenomics.org/download/
 
 Pocillopora acuta
-Mass et al NCBI
+Mass et al 2016
+NCBI BioProject: PRJNA306839
 EMBL EBI
 https://www.ebi.ac.uk/ena/browser/view/PRJNA306839
+Genome:
 
 Montipora capitata
 New Putnam
-
+NCBI BioProject:
+EMBL EBI
+Genome:

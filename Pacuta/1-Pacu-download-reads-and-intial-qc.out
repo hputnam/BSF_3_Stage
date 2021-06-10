@@ -1,0 +1,259 @@
+Loading programs Tue Jun 8 10:51:10 EDT 2021
+Currently Loaded Modulefiles:
+  1) Java/1.8.0_181(1.8)
+  2) FastQC/0.11.8-Java-1.8
+  3) GCCcore/7.3.0
+  4) binutils/2.30-GCCcore-7.3.0
+  5) GCC/7.3.0-2.30
+  6) zlib/.1.2.11-GCCcore-7.3.0
+  7) numactl/2.0.11-GCCcore-7.3.0
+  8) XZ/.5.2.4-GCCcore-7.3.0
+  9) libxml2/.2.9.8-GCCcore-7.3.0
+ 10) libpciaccess/0.14-GCCcore-7.3.0
+ 11) hwloc/.1.11.10-GCCcore-7.3.0
+ 12) OpenMPI/3.1.1-GCC-7.3.0-2.30
+ 13) OpenBLAS/0.3.1-GCC-7.3.0-2.30
+ 14) gompi/2018b
+ 15) FFTW/3.3.8-gompi-2018b
+ 16) ScaLAPACK/2.0.2-gompi-2018b-OpenBLAS-0.3.1
+ 17) foss/2018b
+ 18) bzip2/.1.0.6-GCCcore-7.3.0
+ 19) ncurses/.6.1-GCCcore-7.3.0
+ 20) libreadline/.7.0-GCCcore-7.3.0
+ 21) Tcl/.8.6.8-GCCcore-7.3.0
+ 22) SQLite/.3.24.0-GCCcore-7.3.0
+ 23) GMP/.6.1.2-GCCcore-7.3.0
+ 24) libffi/3.2.1-GCCcore-7.3.0
+ 25) Python/2.7.15-foss-2018b
+ 26) libpng/.1.6.34-GCCcore-7.3.0
+ 27) freetype/.2.9.1-GCCcore-7.3.0
+ 28) expat/2.2.5-GCCcore-7.3.0
+ 29) util-linux/2.32-GCCcore-7.3.0
+ 30) fontconfig/2.13.0-GCCcore-7.3.0
+ 31) X11/20180604-GCCcore-7.3.0
+ 32) Tk/.8.6.8-GCCcore-7.3.0
+ 33) Tkinter/2.7.15-foss-2018b-Python-2.7.15
+ 34) matplotlib/2.2.3-foss-2018b-Python-2.7.15
+ 35) MultiQC/1.7-foss-2018b-Python-2.7.15
+Downloading raw read (fastq) files Tue Jun 8 10:51:11 EDT 2021
+Starting assessment of raw reads Tue Jun 8 10:51:11 EDT 2021
+9
+SRR3051863.fastq.gz: OK
+SRR3051864.fastq.gz: OK
+SRR3051865.fastq.gz: OK
+SRR3051866.fastq.gz: OK
+SRR3051867.fastq.gz: OK
+SRR3051868.fastq.gz: OK
+SRR3051869.fastq.gz: OK
+SRR3051870.fastq.gz: OK
+SRR3051871.fastq.gz: OK
+SRR3051863.fastq.gz:10693684
+SRR3051864.fastq.gz:13818643
+SRR3051865.fastq.gz:14071891
+SRR3051866.fastq.gz:11895244
+SRR3051867.fastq.gz:11908459
+SRR3051868.fastq.gz:12332327
+SRR3051869.fastq.gz:14306489
+SRR3051870.fastq.gz:12539938
+SRR3051871.fastq.gz:13575827
+Started analysis of SRR3051863.fastq.gz
+Approx 5% complete for SRR3051863.fastq.gz
+Approx 10% complete for SRR3051863.fastq.gz
+Approx 15% complete for SRR3051863.fastq.gz
+Approx 20% complete for SRR3051863.fastq.gz
+Approx 25% complete for SRR3051863.fastq.gz
+Approx 30% complete for SRR3051863.fastq.gz
+Approx 35% complete for SRR3051863.fastq.gz
+Approx 40% complete for SRR3051863.fastq.gz
+Approx 45% complete for SRR3051863.fastq.gz
+Approx 50% complete for SRR3051863.fastq.gz
+Approx 55% complete for SRR3051863.fastq.gz
+Approx 60% complete for SRR3051863.fastq.gz
+Approx 65% complete for SRR3051863.fastq.gz
+Approx 70% complete for SRR3051863.fastq.gz
+Approx 75% complete for SRR3051863.fastq.gz
+Approx 80% complete for SRR3051863.fastq.gz
+Approx 85% complete for SRR3051863.fastq.gz
+Approx 90% complete for SRR3051863.fastq.gz
+Approx 95% complete for SRR3051863.fastq.gz
+Analysis complete for SRR3051863.fastq.gz
+Started analysis of SRR3051864.fastq.gz
+Approx 5% complete for SRR3051864.fastq.gz
+Approx 10% complete for SRR3051864.fastq.gz
+Approx 15% complete for SRR3051864.fastq.gz
+Approx 20% complete for SRR3051864.fastq.gz
+Approx 25% complete for SRR3051864.fastq.gz
+Approx 30% complete for SRR3051864.fastq.gz
+Approx 35% complete for SRR3051864.fastq.gz
+Approx 40% complete for SRR3051864.fastq.gz
+Approx 45% complete for SRR3051864.fastq.gz
+Approx 50% complete for SRR3051864.fastq.gz
+Approx 55% complete for SRR3051864.fastq.gz
+Approx 60% complete for SRR3051864.fastq.gz
+Approx 65% complete for SRR3051864.fastq.gz
+Approx 70% complete for SRR3051864.fastq.gz
+Approx 75% complete for SRR3051864.fastq.gz
+Approx 80% complete for SRR3051864.fastq.gz
+Approx 85% complete for SRR3051864.fastq.gz
+Approx 90% complete for SRR3051864.fastq.gz
+Approx 95% complete for SRR3051864.fastq.gz
+Analysis complete for SRR3051864.fastq.gz
+Started analysis of SRR3051865.fastq.gz
+Approx 5% complete for SRR3051865.fastq.gz
+Approx 10% complete for SRR3051865.fastq.gz
+Approx 15% complete for SRR3051865.fastq.gz
+Approx 20% complete for SRR3051865.fastq.gz
+Approx 25% complete for SRR3051865.fastq.gz
+Approx 30% complete for SRR3051865.fastq.gz
+Approx 35% complete for SRR3051865.fastq.gz
+Approx 40% complete for SRR3051865.fastq.gz
+Approx 45% complete for SRR3051865.fastq.gz
+Approx 50% complete for SRR3051865.fastq.gz
+Approx 55% complete for SRR3051865.fastq.gz
+Approx 60% complete for SRR3051865.fastq.gz
+Approx 65% complete for SRR3051865.fastq.gz
+Approx 70% complete for SRR3051865.fastq.gz
+Approx 75% complete for SRR3051865.fastq.gz
+Approx 80% complete for SRR3051865.fastq.gz
+Approx 85% complete for SRR3051865.fastq.gz
+Approx 90% complete for SRR3051865.fastq.gz
+Approx 95% complete for SRR3051865.fastq.gz
+Analysis complete for SRR3051865.fastq.gz
+Started analysis of SRR3051866.fastq.gz
+Approx 5% complete for SRR3051866.fastq.gz
+Approx 10% complete for SRR3051866.fastq.gz
+Approx 15% complete for SRR3051866.fastq.gz
+Approx 20% complete for SRR3051866.fastq.gz
+Approx 25% complete for SRR3051866.fastq.gz
+Approx 30% complete for SRR3051866.fastq.gz
+Approx 35% complete for SRR3051866.fastq.gz
+Approx 40% complete for SRR3051866.fastq.gz
+Approx 45% complete for SRR3051866.fastq.gz
+Approx 50% complete for SRR3051866.fastq.gz
+Approx 55% complete for SRR3051866.fastq.gz
+Approx 60% complete for SRR3051866.fastq.gz
+Approx 65% complete for SRR3051866.fastq.gz
+Approx 70% complete for SRR3051866.fastq.gz
+Approx 75% complete for SRR3051866.fastq.gz
+Approx 80% complete for SRR3051866.fastq.gz
+Approx 85% complete for SRR3051866.fastq.gz
+Approx 90% complete for SRR3051866.fastq.gz
+Approx 95% complete for SRR3051866.fastq.gz
+Analysis complete for SRR3051866.fastq.gz
+Started analysis of SRR3051867.fastq.gz
+Approx 5% complete for SRR3051867.fastq.gz
+Approx 10% complete for SRR3051867.fastq.gz
+Approx 15% complete for SRR3051867.fastq.gz
+Approx 20% complete for SRR3051867.fastq.gz
+Approx 25% complete for SRR3051867.fastq.gz
+Approx 30% complete for SRR3051867.fastq.gz
+Approx 35% complete for SRR3051867.fastq.gz
+Approx 40% complete for SRR3051867.fastq.gz
+Approx 45% complete for SRR3051867.fastq.gz
+Approx 50% complete for SRR3051867.fastq.gz
+Approx 55% complete for SRR3051867.fastq.gz
+Approx 60% complete for SRR3051867.fastq.gz
+Approx 65% complete for SRR3051867.fastq.gz
+Approx 70% complete for SRR3051867.fastq.gz
+Approx 75% complete for SRR3051867.fastq.gz
+Approx 80% complete for SRR3051867.fastq.gz
+Approx 85% complete for SRR3051867.fastq.gz
+Approx 90% complete for SRR3051867.fastq.gz
+Approx 95% complete for SRR3051867.fastq.gz
+Analysis complete for SRR3051867.fastq.gz
+Started analysis of SRR3051868.fastq.gz
+Approx 5% complete for SRR3051868.fastq.gz
+Approx 10% complete for SRR3051868.fastq.gz
+Approx 15% complete for SRR3051868.fastq.gz
+Approx 20% complete for SRR3051868.fastq.gz
+Approx 25% complete for SRR3051868.fastq.gz
+Approx 30% complete for SRR3051868.fastq.gz
+Approx 35% complete for SRR3051868.fastq.gz
+Approx 40% complete for SRR3051868.fastq.gz
+Approx 45% complete for SRR3051868.fastq.gz
+Approx 50% complete for SRR3051868.fastq.gz
+Approx 55% complete for SRR3051868.fastq.gz
+Approx 60% complete for SRR3051868.fastq.gz
+Approx 65% complete for SRR3051868.fastq.gz
+Approx 70% complete for SRR3051868.fastq.gz
+Approx 75% complete for SRR3051868.fastq.gz
+Approx 80% complete for SRR3051868.fastq.gz
+Approx 85% complete for SRR3051868.fastq.gz
+Approx 90% complete for SRR3051868.fastq.gz
+Approx 95% complete for SRR3051868.fastq.gz
+Analysis complete for SRR3051868.fastq.gz
+Started analysis of SRR3051869.fastq.gz
+Approx 5% complete for SRR3051869.fastq.gz
+Approx 10% complete for SRR3051869.fastq.gz
+Approx 15% complete for SRR3051869.fastq.gz
+Approx 20% complete for SRR3051869.fastq.gz
+Approx 25% complete for SRR3051869.fastq.gz
+Approx 30% complete for SRR3051869.fastq.gz
+Approx 35% complete for SRR3051869.fastq.gz
+Approx 40% complete for SRR3051869.fastq.gz
+Approx 45% complete for SRR3051869.fastq.gz
+Approx 50% complete for SRR3051869.fastq.gz
+Approx 55% complete for SRR3051869.fastq.gz
+Approx 60% complete for SRR3051869.fastq.gz
+Approx 65% complete for SRR3051869.fastq.gz
+Approx 70% complete for SRR3051869.fastq.gz
+Approx 75% complete for SRR3051869.fastq.gz
+Approx 80% complete for SRR3051869.fastq.gz
+Approx 85% complete for SRR3051869.fastq.gz
+Approx 90% complete for SRR3051869.fastq.gz
+Approx 95% complete for SRR3051869.fastq.gz
+Analysis complete for SRR3051869.fastq.gz
+Started analysis of SRR3051870.fastq.gz
+Approx 5% complete for SRR3051870.fastq.gz
+Approx 10% complete for SRR3051870.fastq.gz
+Approx 15% complete for SRR3051870.fastq.gz
+Approx 20% complete for SRR3051870.fastq.gz
+Approx 25% complete for SRR3051870.fastq.gz
+Approx 30% complete for SRR3051870.fastq.gz
+Approx 35% complete for SRR3051870.fastq.gz
+Approx 40% complete for SRR3051870.fastq.gz
+Approx 45% complete for SRR3051870.fastq.gz
+Approx 50% complete for SRR3051870.fastq.gz
+Approx 55% complete for SRR3051870.fastq.gz
+Approx 60% complete for SRR3051870.fastq.gz
+Approx 65% complete for SRR3051870.fastq.gz
+Approx 70% complete for SRR3051870.fastq.gz
+Approx 75% complete for SRR3051870.fastq.gz
+Approx 80% complete for SRR3051870.fastq.gz
+Approx 85% complete for SRR3051870.fastq.gz
+Approx 90% complete for SRR3051870.fastq.gz
+Approx 95% complete for SRR3051870.fastq.gz
+Analysis complete for SRR3051870.fastq.gz
+Started analysis of SRR3051871.fastq.gz
+Approx 5% complete for SRR3051871.fastq.gz
+Approx 10% complete for SRR3051871.fastq.gz
+Approx 15% complete for SRR3051871.fastq.gz
+Approx 20% complete for SRR3051871.fastq.gz
+Approx 25% complete for SRR3051871.fastq.gz
+Approx 30% complete for SRR3051871.fastq.gz
+Approx 35% complete for SRR3051871.fastq.gz
+Approx 40% complete for SRR3051871.fastq.gz
+Approx 45% complete for SRR3051871.fastq.gz
+Approx 50% complete for SRR3051871.fastq.gz
+Approx 55% complete for SRR3051871.fastq.gz
+Approx 60% complete for SRR3051871.fastq.gz
+Approx 65% complete for SRR3051871.fastq.gz
+Approx 70% complete for SRR3051871.fastq.gz
+Approx 75% complete for SRR3051871.fastq.gz
+Approx 80% complete for SRR3051871.fastq.gz
+Approx 85% complete for SRR3051871.fastq.gz
+Approx 90% complete for SRR3051871.fastq.gz
+Approx 95% complete for SRR3051871.fastq.gz
+Analysis complete for SRR3051871.fastq.gz
+[WARNING]         multiqc : MultiQC Version v1.10.1 now available!
+[INFO   ]         multiqc : This is MultiQC v1.7
+[INFO   ]         multiqc : Template    : default
+[INFO   ]         multiqc : Searching './'
+[INFO   ]          fastqc : Found 9 reports
+[INFO   ]         multiqc : Compressing plot data
+[WARNING]         multiqc : Previous MultiQC output found! Adjusting filenames..
+[WARNING]         multiqc : Use -f or --force to overwrite existing reports instead
+[INFO   ]         multiqc : Report      : multiqc_report_1.html
+[INFO   ]         multiqc : Data        : multiqc_data_1
+[INFO   ]         multiqc : MultiQC complete
+Assessment of raw reads complete Tue Jun 8 11:12:03 EDT 2021

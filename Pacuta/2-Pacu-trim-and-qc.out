@@ -1,0 +1,521 @@
+Loading programs Tue Jun 8 19:44:18 EDT 2021
+Currently Loaded Modulefiles:
+  1) Java/1.8.0_181(1.8)
+  2) FastQC/0.11.8-Java-1.8
+  3) GCCcore/7.3.0
+  4) binutils/2.30-GCCcore-7.3.0
+  5) GCC/7.3.0-2.30
+  6) zlib/.1.2.11-GCCcore-7.3.0
+  7) numactl/2.0.11-GCCcore-7.3.0
+  8) XZ/.5.2.4-GCCcore-7.3.0
+  9) libxml2/.2.9.8-GCCcore-7.3.0
+ 10) libpciaccess/0.14-GCCcore-7.3.0
+ 11) hwloc/.1.11.10-GCCcore-7.3.0
+ 12) OpenMPI/3.1.1-GCC-7.3.0-2.30
+ 13) OpenBLAS/0.3.1-GCC-7.3.0-2.30
+ 14) gompi/2018b
+ 15) FFTW/3.3.8-gompi-2018b
+ 16) ScaLAPACK/2.0.2-gompi-2018b-OpenBLAS-0.3.1
+ 17) foss/2018b
+ 18) bzip2/.1.0.6-GCCcore-7.3.0
+ 19) ncurses/.6.1-GCCcore-7.3.0
+ 20) libreadline/.7.0-GCCcore-7.3.0
+ 21) Tcl/.8.6.8-GCCcore-7.3.0
+ 22) SQLite/.3.24.0-GCCcore-7.3.0
+ 23) GMP/.6.1.2-GCCcore-7.3.0
+ 24) libffi/3.2.1-GCCcore-7.3.0
+ 25) Python/2.7.15-foss-2018b
+ 26) libpng/.1.6.34-GCCcore-7.3.0
+ 27) freetype/.2.9.1-GCCcore-7.3.0
+ 28) expat/2.2.5-GCCcore-7.3.0
+ 29) util-linux/2.32-GCCcore-7.3.0
+ 30) fontconfig/2.13.0-GCCcore-7.3.0
+ 31) X11/20180604-GCCcore-7.3.0
+ 32) Tk/.8.6.8-GCCcore-7.3.0
+ 33) Tkinter/2.7.15-foss-2018b-Python-2.7.15
+ 34) matplotlib/2.2.3-foss-2018b-Python-2.7.15
+ 35) MultiQC/1.7-foss-2018b-Python-2.7.15
+ 36) zlib/.1.2.11
+ 37) fastp/0.19.7-foss-2018b
+Starting read trimming. Tue Jun 8 19:44:19 EDT 2021
+Detecting adapter sequence for read1...
+Illumina TruSeq Adapter Read 1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Read1 before filtering:
+total reads: 10693684
+total bases: 1614746284
+Q20 bases: 1589020440(98.4068%)
+Q30 bases: 1528625806(94.6666%)
+
+Read1 after filtering:
+total reads: 10552838
+total bases: 1474066172
+Q20 bases: 1464810117(99.3721%)
+Q30 bases: 1424489337(96.6367%)
+
+Filtering result:
+reads passed filter: 10552838
+reads failed due to low quality: 52000
+reads failed due to too many N: 0
+reads failed due to too short: 88846
+reads with adapter trimmed: 2301011
+bases trimmed due to adapters: 52822765
+
+Duplication rate (may be overestimated since this is SE data): 12.6885%
+
+JSON report: ../clean_reads/SRR3051863.fastq.gz.fastp.json
+HTML report: ../clean_reads/SRR3051863.fastq.gz.fastp.html
+
+fastp --in1 SRR3051863.fastq.gz --out1 ../clean_reads/SRR3051863.fastq.gz --qualified_quality_phred 20 --unqualified_percent_limit 10 --length_required 25 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 -h ../clean_reads/SRR3051863.fastq.gz.fastp.html -j ../clean_reads/SRR3051863.fastq.gz.fastp.json 
+fastp v0.19.7, time used: 176 seconds
+Started analysis of SRR3051863.fastq.gz
+Approx 5% complete for SRR3051863.fastq.gz
+Approx 10% complete for SRR3051863.fastq.gz
+Approx 15% complete for SRR3051863.fastq.gz
+Approx 20% complete for SRR3051863.fastq.gz
+Approx 25% complete for SRR3051863.fastq.gz
+Approx 30% complete for SRR3051863.fastq.gz
+Approx 35% complete for SRR3051863.fastq.gz
+Approx 40% complete for SRR3051863.fastq.gz
+Approx 45% complete for SRR3051863.fastq.gz
+Approx 50% complete for SRR3051863.fastq.gz
+Approx 55% complete for SRR3051863.fastq.gz
+Approx 60% complete for SRR3051863.fastq.gz
+Approx 65% complete for SRR3051863.fastq.gz
+Approx 70% complete for SRR3051863.fastq.gz
+Approx 75% complete for SRR3051863.fastq.gz
+Approx 80% complete for SRR3051863.fastq.gz
+Approx 85% complete for SRR3051863.fastq.gz
+Approx 90% complete for SRR3051863.fastq.gz
+Approx 95% complete for SRR3051863.fastq.gz
+Analysis complete for SRR3051863.fastq.gz
+Detecting adapter sequence for read1...
+Illumina TruSeq Adapter Read 1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Read1 before filtering:
+total reads: 13818643
+total bases: 2086615093
+Q20 bases: 2054297675(98.4512%)
+Q30 bases: 1978043688(94.7968%)
+
+Read1 after filtering:
+total reads: 13639132
+total bases: 1904157395
+Q20 bases: 1892552838(99.3906%)
+Q30 bases: 1841653628(96.7175%)
+
+Filtering result:
+reads passed filter: 13639132
+reads failed due to low quality: 63591
+reads failed due to too many N: 0
+reads failed due to too short: 115920
+reads with adapter trimmed: 3076408
+bases trimmed due to adapters: 72272036
+
+Duplication rate (may be overestimated since this is SE data): 12.4552%
+
+JSON report: ../clean_reads/SRR3051864.fastq.gz.fastp.json
+HTML report: ../clean_reads/SRR3051864.fastq.gz.fastp.html
+
+fastp --in1 SRR3051864.fastq.gz --out1 ../clean_reads/SRR3051864.fastq.gz --qualified_quality_phred 20 --unqualified_percent_limit 10 --length_required 25 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 -h ../clean_reads/SRR3051864.fastq.gz.fastp.html -j ../clean_reads/SRR3051864.fastq.gz.fastp.json 
+fastp v0.19.7, time used: 222 seconds
+Started analysis of SRR3051864.fastq.gz
+Approx 5% complete for SRR3051864.fastq.gz
+Approx 10% complete for SRR3051864.fastq.gz
+Approx 15% complete for SRR3051864.fastq.gz
+Approx 20% complete for SRR3051864.fastq.gz
+Approx 25% complete for SRR3051864.fastq.gz
+Approx 30% complete for SRR3051864.fastq.gz
+Approx 35% complete for SRR3051864.fastq.gz
+Approx 40% complete for SRR3051864.fastq.gz
+Approx 45% complete for SRR3051864.fastq.gz
+Approx 50% complete for SRR3051864.fastq.gz
+Approx 55% complete for SRR3051864.fastq.gz
+Approx 60% complete for SRR3051864.fastq.gz
+Approx 65% complete for SRR3051864.fastq.gz
+Approx 70% complete for SRR3051864.fastq.gz
+Approx 75% complete for SRR3051864.fastq.gz
+Approx 80% complete for SRR3051864.fastq.gz
+Approx 85% complete for SRR3051864.fastq.gz
+Approx 90% complete for SRR3051864.fastq.gz
+Approx 95% complete for SRR3051864.fastq.gz
+Analysis complete for SRR3051864.fastq.gz
+Detecting adapter sequence for read1...
+Illumina TruSeq Adapter Read 1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Read1 before filtering:
+total reads: 14071891
+total bases: 2124855541
+Q20 bases: 2091609197(98.4354%)
+Q30 bases: 2012644002(94.7191%)
+
+Read1 after filtering:
+total reads: 13884540
+total bases: 1946002627
+Q20 bases: 1933913316(99.3788%)
+Q30 bases: 1880986890(96.659%)
+
+Filtering result:
+reads passed filter: 13884540
+reads failed due to low quality: 67183
+reads failed due to too many N: 0
+reads failed due to too short: 120168
+reads with adapter trimmed: 2825757
+bases trimmed due to adapters: 64563662
+
+Duplication rate (may be overestimated since this is SE data): 11.8745%
+
+JSON report: ../clean_reads/SRR3051865.fastq.gz.fastp.json
+HTML report: ../clean_reads/SRR3051865.fastq.gz.fastp.html
+
+fastp --in1 SRR3051865.fastq.gz --out1 ../clean_reads/SRR3051865.fastq.gz --qualified_quality_phred 20 --unqualified_percent_limit 10 --length_required 25 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 -h ../clean_reads/SRR3051865.fastq.gz.fastp.html -j ../clean_reads/SRR3051865.fastq.gz.fastp.json 
+fastp v0.19.7, time used: 227 seconds
+Started analysis of SRR3051865.fastq.gz
+Approx 5% complete for SRR3051865.fastq.gz
+Approx 10% complete for SRR3051865.fastq.gz
+Approx 15% complete for SRR3051865.fastq.gz
+Approx 20% complete for SRR3051865.fastq.gz
+Approx 25% complete for SRR3051865.fastq.gz
+Approx 30% complete for SRR3051865.fastq.gz
+Approx 35% complete for SRR3051865.fastq.gz
+Approx 40% complete for SRR3051865.fastq.gz
+Approx 45% complete for SRR3051865.fastq.gz
+Approx 50% complete for SRR3051865.fastq.gz
+Approx 55% complete for SRR3051865.fastq.gz
+Approx 60% complete for SRR3051865.fastq.gz
+Approx 65% complete for SRR3051865.fastq.gz
+Approx 70% complete for SRR3051865.fastq.gz
+Approx 75% complete for SRR3051865.fastq.gz
+Approx 80% complete for SRR3051865.fastq.gz
+Approx 85% complete for SRR3051865.fastq.gz
+Approx 90% complete for SRR3051865.fastq.gz
+Approx 95% complete for SRR3051865.fastq.gz
+Analysis complete for SRR3051865.fastq.gz
+Detecting adapter sequence for read1...
+Illumina TruSeq Adapter Read 1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Read1 before filtering:
+total reads: 11895244
+total bases: 1843762820
+Q20 bases: 1789090363(97.0347%)
+Q30 bases: 1673501421(90.7655%)
+
+Read1 after filtering:
+total reads: 11516093
+total bases: 1572371595
+Q20 bases: 1554520844(98.8647%)
+Q30 bases: 1484509558(94.4121%)
+
+Filtering result:
+reads passed filter: 11516093
+reads failed due to low quality: 164833
+reads failed due to too many N: 0
+reads failed due to too short: 214318
+reads with adapter trimmed: 2356920
+bases trimmed due to adapters: 60481237
+
+Duplication rate (may be overestimated since this is SE data): 11.126%
+
+JSON report: ../clean_reads/SRR3051866.fastq.gz.fastp.json
+HTML report: ../clean_reads/SRR3051866.fastq.gz.fastp.html
+
+fastp --in1 SRR3051866.fastq.gz --out1 ../clean_reads/SRR3051866.fastq.gz --qualified_quality_phred 20 --unqualified_percent_limit 10 --length_required 25 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 -h ../clean_reads/SRR3051866.fastq.gz.fastp.html -j ../clean_reads/SRR3051866.fastq.gz.fastp.json 
+fastp v0.19.7, time used: 198 seconds
+Started analysis of SRR3051866.fastq.gz
+Approx 5% complete for SRR3051866.fastq.gz
+Approx 10% complete for SRR3051866.fastq.gz
+Approx 15% complete for SRR3051866.fastq.gz
+Approx 20% complete for SRR3051866.fastq.gz
+Approx 25% complete for SRR3051866.fastq.gz
+Approx 30% complete for SRR3051866.fastq.gz
+Approx 35% complete for SRR3051866.fastq.gz
+Approx 40% complete for SRR3051866.fastq.gz
+Approx 45% complete for SRR3051866.fastq.gz
+Approx 50% complete for SRR3051866.fastq.gz
+Approx 55% complete for SRR3051866.fastq.gz
+Approx 60% complete for SRR3051866.fastq.gz
+Approx 65% complete for SRR3051866.fastq.gz
+Approx 70% complete for SRR3051866.fastq.gz
+Approx 75% complete for SRR3051866.fastq.gz
+Approx 80% complete for SRR3051866.fastq.gz
+Approx 85% complete for SRR3051866.fastq.gz
+Approx 90% complete for SRR3051866.fastq.gz
+Approx 95% complete for SRR3051866.fastq.gz
+Analysis complete for SRR3051866.fastq.gz
+Detecting adapter sequence for read1...
+Illumina TruSeq Adapter Read 1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Read1 before filtering:
+total reads: 11908459
+total bases: 1845811145
+Q20 bases: 1791785119(97.073%)
+Q30 bases: 1676770376(90.8419%)
+
+Read1 after filtering:
+total reads: 11531540
+total bases: 1580604387
+Q20 bases: 1562673316(98.8656%)
+Q30 bases: 1492411597(94.4203%)
+
+Filtering result:
+reads passed filter: 11531540
+reads failed due to low quality: 163852
+reads failed due to too many N: 0
+reads failed due to too short: 213067
+reads with adapter trimmed: 2195369
+bases trimmed due to adapters: 55833592
+
+Duplication rate (may be overestimated since this is SE data): 12.528%
+
+JSON report: ../clean_reads/SRR3051867.fastq.gz.fastp.json
+HTML report: ../clean_reads/SRR3051867.fastq.gz.fastp.html
+
+fastp --in1 SRR3051867.fastq.gz --out1 ../clean_reads/SRR3051867.fastq.gz --qualified_quality_phred 20 --unqualified_percent_limit 10 --length_required 25 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 -h ../clean_reads/SRR3051867.fastq.gz.fastp.html -j ../clean_reads/SRR3051867.fastq.gz.fastp.json 
+fastp v0.19.7, time used: 198 seconds
+Started analysis of SRR3051867.fastq.gz
+Approx 5% complete for SRR3051867.fastq.gz
+Approx 10% complete for SRR3051867.fastq.gz
+Approx 15% complete for SRR3051867.fastq.gz
+Approx 20% complete for SRR3051867.fastq.gz
+Approx 25% complete for SRR3051867.fastq.gz
+Approx 30% complete for SRR3051867.fastq.gz
+Approx 35% complete for SRR3051867.fastq.gz
+Approx 40% complete for SRR3051867.fastq.gz
+Approx 45% complete for SRR3051867.fastq.gz
+Approx 50% complete for SRR3051867.fastq.gz
+Approx 55% complete for SRR3051867.fastq.gz
+Approx 60% complete for SRR3051867.fastq.gz
+Approx 65% complete for SRR3051867.fastq.gz
+Approx 70% complete for SRR3051867.fastq.gz
+Approx 75% complete for SRR3051867.fastq.gz
+Approx 80% complete for SRR3051867.fastq.gz
+Approx 85% complete for SRR3051867.fastq.gz
+Approx 90% complete for SRR3051867.fastq.gz
+Approx 95% complete for SRR3051867.fastq.gz
+Analysis complete for SRR3051867.fastq.gz
+Detecting adapter sequence for read1...
+Illumina TruSeq Adapter Read 1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Read1 before filtering:
+total reads: 12332327
+total bases: 1911510685
+Q20 bases: 1853804190(96.9811%)
+Q30 bases: 1732716491(90.6464%)
+
+Read1 after filtering:
+total reads: 11927601
+total bases: 1635425240
+Q20 bases: 1616641231(98.8514%)
+Q30 bases: 1543134962(94.3568%)
+
+Filtering result:
+reads passed filter: 11927601
+reads failed due to low quality: 176507
+reads failed due to too many N: 0
+reads failed due to too short: 228219
+reads with adapter trimmed: 2153942
+bases trimmed due to adapters: 53308559
+
+Duplication rate (may be overestimated since this is SE data): 11.5825%
+
+JSON report: ../clean_reads/SRR3051868.fastq.gz.fastp.json
+HTML report: ../clean_reads/SRR3051868.fastq.gz.fastp.html
+
+fastp --in1 SRR3051868.fastq.gz --out1 ../clean_reads/SRR3051868.fastq.gz --qualified_quality_phred 20 --unqualified_percent_limit 10 --length_required 25 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 -h ../clean_reads/SRR3051868.fastq.gz.fastp.html -j ../clean_reads/SRR3051868.fastq.gz.fastp.json 
+fastp v0.19.7, time used: 207 seconds
+Started analysis of SRR3051868.fastq.gz
+Approx 5% complete for SRR3051868.fastq.gz
+Approx 10% complete for SRR3051868.fastq.gz
+Approx 15% complete for SRR3051868.fastq.gz
+Approx 20% complete for SRR3051868.fastq.gz
+Approx 25% complete for SRR3051868.fastq.gz
+Approx 30% complete for SRR3051868.fastq.gz
+Approx 35% complete for SRR3051868.fastq.gz
+Approx 40% complete for SRR3051868.fastq.gz
+Approx 45% complete for SRR3051868.fastq.gz
+Approx 50% complete for SRR3051868.fastq.gz
+Approx 55% complete for SRR3051868.fastq.gz
+Approx 60% complete for SRR3051868.fastq.gz
+Approx 65% complete for SRR3051868.fastq.gz
+Approx 70% complete for SRR3051868.fastq.gz
+Approx 75% complete for SRR3051868.fastq.gz
+Approx 80% complete for SRR3051868.fastq.gz
+Approx 85% complete for SRR3051868.fastq.gz
+Approx 90% complete for SRR3051868.fastq.gz
+Approx 95% complete for SRR3051868.fastq.gz
+Analysis complete for SRR3051868.fastq.gz
+Detecting adapter sequence for read1...
+Illumina TruSeq Adapter Read 1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Read1 before filtering:
+total reads: 14306489
+total bases: 2160279839
+Q20 bases: 2122823894(98.2662%)
+Q30 bases: 2037049670(94.2956%)
+
+Read1 after filtering:
+total reads: 14100631
+total bases: 1962352694
+Q20 bases: 1948961371(99.3176%)
+Q30 bases: 1891771460(96.4032%)
+
+Filtering result:
+reads passed filter: 14100631
+reads failed due to low quality: 75301
+reads failed due to too many N: 0
+reads failed due to too short: 130557
+reads with adapter trimmed: 3149509
+bases trimmed due to adapters: 71927902
+
+Duplication rate (may be overestimated since this is SE data): 12.2333%
+
+JSON report: ../clean_reads/SRR3051869.fastq.gz.fastp.json
+HTML report: ../clean_reads/SRR3051869.fastq.gz.fastp.html
+
+fastp --in1 SRR3051869.fastq.gz --out1 ../clean_reads/SRR3051869.fastq.gz --qualified_quality_phred 20 --unqualified_percent_limit 10 --length_required 25 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 -h ../clean_reads/SRR3051869.fastq.gz.fastp.html -j ../clean_reads/SRR3051869.fastq.gz.fastp.json 
+fastp v0.19.7, time used: 239 seconds
+Started analysis of SRR3051869.fastq.gz
+Approx 5% complete for SRR3051869.fastq.gz
+Approx 10% complete for SRR3051869.fastq.gz
+Approx 15% complete for SRR3051869.fastq.gz
+Approx 20% complete for SRR3051869.fastq.gz
+Approx 25% complete for SRR3051869.fastq.gz
+Approx 30% complete for SRR3051869.fastq.gz
+Approx 35% complete for SRR3051869.fastq.gz
+Approx 40% complete for SRR3051869.fastq.gz
+Approx 45% complete for SRR3051869.fastq.gz
+Approx 50% complete for SRR3051869.fastq.gz
+Approx 55% complete for SRR3051869.fastq.gz
+Approx 60% complete for SRR3051869.fastq.gz
+Approx 65% complete for SRR3051869.fastq.gz
+Approx 70% complete for SRR3051869.fastq.gz
+Approx 75% complete for SRR3051869.fastq.gz
+Approx 80% complete for SRR3051869.fastq.gz
+Approx 85% complete for SRR3051869.fastq.gz
+Approx 90% complete for SRR3051869.fastq.gz
+Approx 95% complete for SRR3051869.fastq.gz
+Analysis complete for SRR3051869.fastq.gz
+Detecting adapter sequence for read1...
+Illumina TruSeq Adapter Read 1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Read1 before filtering:
+total reads: 12539938
+total bases: 1893530638
+Q20 bases: 1858557765(98.153%)
+Q30 bases: 1778678848(93.9345%)
+
+Read1 after filtering:
+total reads: 12343569
+total bases: 1711886141
+Q20 bases: 1699334263(99.2668%)
+Q30 bases: 1646402745(96.1748%)
+
+Filtering result:
+reads passed filter: 12343569
+reads failed due to low quality: 73049
+reads failed due to too many N: 0
+reads failed due to too short: 123320
+reads with adapter trimmed: 2768828
+bases trimmed due to adapters: 62832813
+
+Duplication rate (may be overestimated since this is SE data): 11.5568%
+
+JSON report: ../clean_reads/SRR3051870.fastq.gz.fastp.json
+HTML report: ../clean_reads/SRR3051870.fastq.gz.fastp.html
+
+fastp --in1 SRR3051870.fastq.gz --out1 ../clean_reads/SRR3051870.fastq.gz --qualified_quality_phred 20 --unqualified_percent_limit 10 --length_required 25 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 -h ../clean_reads/SRR3051870.fastq.gz.fastp.html -j ../clean_reads/SRR3051870.fastq.gz.fastp.json 
+fastp v0.19.7, time used: 214 seconds
+Started analysis of SRR3051870.fastq.gz
+Approx 5% complete for SRR3051870.fastq.gz
+Approx 10% complete for SRR3051870.fastq.gz
+Approx 15% complete for SRR3051870.fastq.gz
+Approx 20% complete for SRR3051870.fastq.gz
+Approx 25% complete for SRR3051870.fastq.gz
+Approx 30% complete for SRR3051870.fastq.gz
+Approx 35% complete for SRR3051870.fastq.gz
+Approx 40% complete for SRR3051870.fastq.gz
+Approx 45% complete for SRR3051870.fastq.gz
+Approx 50% complete for SRR3051870.fastq.gz
+Approx 55% complete for SRR3051870.fastq.gz
+Approx 60% complete for SRR3051870.fastq.gz
+Approx 65% complete for SRR3051870.fastq.gz
+Approx 70% complete for SRR3051870.fastq.gz
+Approx 75% complete for SRR3051870.fastq.gz
+Approx 80% complete for SRR3051870.fastq.gz
+Approx 85% complete for SRR3051870.fastq.gz
+Approx 90% complete for SRR3051870.fastq.gz
+Approx 95% complete for SRR3051870.fastq.gz
+Analysis complete for SRR3051870.fastq.gz
+Detecting adapter sequence for read1...
+Illumina TruSeq Adapter Read 1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Read1 before filtering:
+total reads: 13575827
+total bases: 2049949877
+Q20 bases: 2014588226(98.275%)
+Q30 bases: 1933414837(94.3152%)
+
+Read1 after filtering:
+total reads: 13379392
+total bases: 1857889037
+Q20 bases: 1845243171(99.3193%)
+Q30 bases: 1791312158(96.4165%)
+
+Filtering result:
+reads passed filter: 13379392
+reads failed due to low quality: 72086
+reads failed due to too many N: 0
+reads failed due to too short: 124349
+reads with adapter trimmed: 3093501
+bases trimmed due to adapters: 72405299
+
+Duplication rate (may be overestimated since this is SE data): 11.3897%
+
+JSON report: ../clean_reads/SRR3051871.fastq.gz.fastp.json
+HTML report: ../clean_reads/SRR3051871.fastq.gz.fastp.html
+
+fastp --in1 SRR3051871.fastq.gz --out1 ../clean_reads/SRR3051871.fastq.gz --qualified_quality_phred 20 --unqualified_percent_limit 10 --length_required 25 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 -h ../clean_reads/SRR3051871.fastq.gz.fastp.html -j ../clean_reads/SRR3051871.fastq.gz.fastp.json 
+fastp v0.19.7, time used: 232 seconds
+Started analysis of SRR3051871.fastq.gz
+Approx 5% complete for SRR3051871.fastq.gz
+Approx 10% complete for SRR3051871.fastq.gz
+Approx 15% complete for SRR3051871.fastq.gz
+Approx 20% complete for SRR3051871.fastq.gz
+Approx 25% complete for SRR3051871.fastq.gz
+Approx 30% complete for SRR3051871.fastq.gz
+Approx 35% complete for SRR3051871.fastq.gz
+Approx 40% complete for SRR3051871.fastq.gz
+Approx 45% complete for SRR3051871.fastq.gz
+Approx 50% complete for SRR3051871.fastq.gz
+Approx 55% complete for SRR3051871.fastq.gz
+Approx 60% complete for SRR3051871.fastq.gz
+Approx 65% complete for SRR3051871.fastq.gz
+Approx 70% complete for SRR3051871.fastq.gz
+Approx 75% complete for SRR3051871.fastq.gz
+Approx 80% complete for SRR3051871.fastq.gz
+Approx 85% complete for SRR3051871.fastq.gz
+Approx 90% complete for SRR3051871.fastq.gz
+Approx 95% complete for SRR3051871.fastq.gz
+Analysis complete for SRR3051871.fastq.gz
+Read trimming complete. Starting assessment of clean reads. Tue Jun 8 20:32:19 EDT 2021
+[WARNING]         multiqc : MultiQC Version v1.10.1 now available!
+[INFO   ]         multiqc : This is MultiQC v1.7
+[INFO   ]         multiqc : Template    : default
+[INFO   ]         multiqc : Searching './'
+[INFO   ]           fastp : Found 9 reports
+[INFO   ]          fastqc : Found 9 reports
+[INFO   ]         multiqc : Compressing plot data
+[INFO   ]         multiqc : Report      : multiqc_report.html
+[INFO   ]         multiqc : Data        : multiqc_data
+[INFO   ]         multiqc : MultiQC complete
+Cleaned MultiQC report generated. Have a look-see at the results while the number of reads per sequence is tabulated Tue Jun 8 20:32:26 EDT 2021
+SRR3051863.fastq.gz:10552838
+SRR3051864.fastq.gz:13639132
+SRR3051865.fastq.gz:13884540
+SRR3051866.fastq.gz:11516093
+SRR3051867.fastq.gz:11531540
+SRR3051868.fastq.gz:11927601
+SRR3051869.fastq.gz:14100631
+SRR3051870.fastq.gz:12343569
+SRR3051871.fastq.gz:13379392
+Assessment of trimmed reads complete Tue Jun 8 20:36:32 EDT 2021

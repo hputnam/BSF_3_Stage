@@ -19,6 +19,8 @@
 echo "Loading programs" $(date)
 module load HISAT2/2.1.0-foss-2018b #Alignment to reference genome: HISAT2
 module load SAMtools/1.9-foss-2018b #Preparation of alignment for assembly: SAMtools
+module load FastQC/0.11.8-Java-1.8 #Quality check: FastQC
+module load MultiQC/1.7-foss-2018b-Python-2.7.15 #Quality check: MultiQC
 
 #-------------------------------------------------------
 
@@ -60,4 +62,9 @@ for i in ${array1[@]}; do
         echo "HISAT2 complete for $(echo ${i}|sed s/_R1//)" $(date)
 done
 
-echo "HISAT2 complete. Now we can assemble!" $(date)
+echo "HISAT2 complete. Now we can will assess the alignment with fastqc." $(date)
+cd /data/putnamlab/erin_chille/BSF_3_Stage/Spis/hisat2_bam #Enter correct dir
+fastqc ./*.bam
+multiqc	./
+
+echo "Assessment of alignment complete!	Time to	quantify our reads :)" $(date)

@@ -3,9 +3,9 @@
 #SBATCH -t 100:00:00
 #SBATCH --export=NONE
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=XXXX
+#SBATCH --mail-user=XXX
 #SBATCH --mem=128GB
-#SBATCH -D XXXXX
+#SBATCH -D XXX
 
 ##This script is quality trim and subsequently QCSE RNA sequences from three life stages of three coral species
 #https://github.com/hputnam/BSF_3_Stage
@@ -13,7 +13,6 @@
 # P. acuta ENA Project PRJNA306839 (https://www.ebi.ac.uk/ena/browser/view/PRJNA306839)
 # S. pistillata ENA Project PRJNA725478 (https://www.ebi.ac.uk/ena/browser/view/PRJNA725478)
 # M. capitata ENA Project (TBD; Link)
-#CHANGE PATH LINES 29,39
 
 echo "Loading programs" $(date)
 
@@ -26,21 +25,27 @@ module list
 
 echo "Starting read trimming." $(date)
 
-cd XXXX/raw_reads #move to correct dir CHANGE DIR
-array1=($(ls *.fastq.gz)) #Make an array of sequences to trim
+cd raw_reads #move to correct dir
+array1=($(ls *_R1.fastq.gz)) #Make an array of sequences to trim
 
-for i in ${array1[@]}; do #Make a loop that trims each file in the array
-         fastp --in1 ${i} --out1 ../clean_reads/${i} --qualified_quality_phred 20 --unqualified_percent_limit 10 --length_required 25 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 -h ../clean_reads/${i}.fastp.html -j ../clean_reads/${i}.fastp.json
-         fastqc ../clean_reads/${i}
+for i in ${array1[@]}; do #Make a loop that trims each file in the array PAIRED END (Mcap and Spis)
+         fastp --in1 ${i} --in2 $(echo ${i}|sed s/_R1/_R2/) --out1 ../clean_reads/${i} --out2 ../clean_reads/$(echo ${i}|sed s/_R1/_R2/) --detect_adapter_for_pe \
+         --qualified_quality_phred 20 --unqualified_percent_limit 10 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 \
+         -h ../clean_reads/${i}.fastp.html -j ../clean_reads/${i}.fastp.json
+done
+
+for i in ${array1[@]}; do #Make a loop that trims each file in the array SINGLE END (Pacu)
+         fastp --in1 ${i} --out1 ../clean_reads/${i}
+         --qualified_quality_phred 20 --unqualified_percent_limit 10 --cut_right cut_right_window_size 5 cut_right_mean_quality 20 \
+         -h ../clean_reads/${i}.fastp.html -j ../clean_reads/${i}.fastp.json
 done
 
 echo "Read trimming complete. Starting assessment of clean reads." $(date)
 
-cd XXXX/clean_reads #move to correct dir CHANGE DIR
+cd ../clean_reads #move to correct dir
+fastqc ./*.fastq.gz
 multiqc ./ #Compile MultiQC report from FastQC files
 
 echo "Cleaned MultiQC report generated. Have a look-see at the results while the number of reads per sequence is tabulated" $(date)
-
-zgrep -c "@SRR" *.fastq.gz #Check the number of reads per file again
 
 echo "Assessment of trimmed reads complete" $(date)

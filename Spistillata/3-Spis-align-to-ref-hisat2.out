@@ -1,0 +1,382 @@
+Loading programs Sat Jun 12 00:18:58 EDT 2021
+Aligning paired end reads Sat Jun 12 00:18:59 EDT 2021
+Starting alignment of sample SRR14333319.fastq.gz Sat Jun 12 00:18:59 EDT 2021
+5159771 reads; of these:
+  5159771 (100.00%) were paired; of these:
+    4538769 (87.96%) aligned concordantly 0 times
+    600500 (11.64%) aligned concordantly exactly 1 time
+    20502 (0.40%) aligned concordantly >1 times
+    ----
+    4538769 pairs aligned concordantly 0 times; of these:
+      2270201 (50.02%) aligned discordantly 1 time
+    ----
+    2268568 pairs aligned 0 times concordantly or discordantly; of these:
+      4537136 mates make up the pairs; of these:
+        1800462 (39.68%) aligned 0 times
+        2557610 (56.37%) aligned exactly 1 time
+        179064 (3.95%) aligned >1 times
+82.55% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR14333319.fastq.gz_bam
+HISAT2 complete for SRR14333319.fastq.gz Sat Jun 12 00:22:36 EDT 2021
+Starting alignment of sample SRR14333320.fastq.gz Sat Jun 12 00:22:36 EDT 2021
+4760129 reads; of these:
+  4760129 (100.00%) were paired; of these:
+    4249347 (89.27%) aligned concordantly 0 times
+    493523 (10.37%) aligned concordantly exactly 1 time
+    17259 (0.36%) aligned concordantly >1 times
+    ----
+    4249347 pairs aligned concordantly 0 times; of these:
+      2053324 (48.32%) aligned discordantly 1 time
+    ----
+    2196023 pairs aligned 0 times concordantly or discordantly; of these:
+      4392046 mates make up the pairs; of these:
+        1863520 (42.43%) aligned 0 times
+        2355858 (53.64%) aligned exactly 1 time
+        172668 (3.93%) aligned >1 times
+80.43% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR14333320.fastq.gz_bam
+HISAT2 complete for SRR14333320.fastq.gz Sat Jun 12 00:25:36 EDT 2021
+Starting alignment of sample SRR14333321.fastq.gz Sat Jun 12 00:25:36 EDT 2021
+4638404 reads; of these:
+  4638404 (100.00%) were paired; of these:
+    4140595 (89.27%) aligned concordantly 0 times
+    480458 (10.36%) aligned concordantly exactly 1 time
+    17351 (0.37%) aligned concordantly >1 times
+    ----
+    4140595 pairs aligned concordantly 0 times; of these:
+      1980044 (47.82%) aligned discordantly 1 time
+    ----
+    2160551 pairs aligned 0 times concordantly or discordantly; of these:
+      4321102 mates make up the pairs; of these:
+        1892890 (43.81%) aligned 0 times
+        2261045 (52.33%) aligned exactly 1 time
+        167167 (3.87%) aligned >1 times
+79.60% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR14333321.fastq.gz_bam
+HISAT2 complete for SRR14333321.fastq.gz Sat Jun 12 00:28:31 EDT 2021
+Starting alignment of sample SRR14333322.fastq.gz Sat Jun 12 00:28:31 EDT 2021
+4792471 reads; of these:
+  4792471 (100.00%) were paired; of these:
+    4179732 (87.21%) aligned concordantly 0 times
+    597697 (12.47%) aligned concordantly exactly 1 time
+    15042 (0.31%) aligned concordantly >1 times
+    ----
+    4179732 pairs aligned concordantly 0 times; of these:
+      2078019 (49.72%) aligned discordantly 1 time
+    ----
+    2101713 pairs aligned 0 times concordantly or discordantly; of these:
+      4203426 mates make up the pairs; of these:
+        1593778 (37.92%) aligned 0 times
+        2500518 (59.49%) aligned exactly 1 time
+        109130 (2.60%) aligned >1 times
+83.37% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR14333322.fastq.gz_bam
+HISAT2 complete for SRR14333322.fastq.gz Sat Jun 12 00:32:03 EDT 2021
+Starting alignment of sample SRR14333323.fastq.gz Sat Jun 12 00:32:03 EDT 2021
+5334572 reads; of these:
+  5334572 (100.00%) were paired; of these:
+    4690279 (87.92%) aligned concordantly 0 times
+    629218 (11.80%) aligned concordantly exactly 1 time
+    15075 (0.28%) aligned concordantly >1 times
+    ----
+    4690279 pairs aligned concordantly 0 times; of these:
+      2452572 (52.29%) aligned discordantly 1 time
+    ----
+    2237707 pairs aligned 0 times concordantly or discordantly; of these:
+      4475414 mates make up the pairs; of these:
+        1626864 (36.35%) aligned 0 times
+        2713718 (60.64%) aligned exactly 1 time
+        134832 (3.01%) aligned >1 times
+84.75% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR14333323.fastq.gz_bam
+HISAT2 complete for SRR14333323.fastq.gz Sat Jun 12 00:38:21 EDT 2021
+Starting alignment of sample SRR14333324.fastq.gz Sat Jun 12 00:38:21 EDT 2021
+5252993 reads; of these:
+  5252993 (100.00%) were paired; of these:
+    4644738 (88.42%) aligned concordantly 0 times
+    592975 (11.29%) aligned concordantly exactly 1 time
+    15280 (0.29%) aligned concordantly >1 times
+    ----
+    4644738 pairs aligned concordantly 0 times; of these:
+      2425495 (52.22%) aligned discordantly 1 time
+    ----
+    2219243 pairs aligned 0 times concordantly or discordantly; of these:
+      4438486 mates make up the pairs; of these:
+        1559752 (35.14%) aligned 0 times
+        2732137 (61.56%) aligned exactly 1 time
+        146597 (3.30%) aligned >1 times
+85.15% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR14333324.fastq.gz_bam
+HISAT2 complete for SRR14333324.fastq.gz Sat Jun 12 00:43:36 EDT 2021
+Starting alignment of sample SRR14333325.fastq.gz Sat Jun 12 00:43:36 EDT 2021
+4791284 reads; of these:
+  4791284 (100.00%) were paired; of these:
+    4203110 (87.72%) aligned concordantly 0 times
+    574400 (11.99%) aligned concordantly exactly 1 time
+    13774 (0.29%) aligned concordantly >1 times
+    ----
+    4203110 pairs aligned concordantly 0 times; of these:
+      2190869 (52.12%) aligned discordantly 1 time
+    ----
+    2012241 pairs aligned 0 times concordantly or discordantly; of these:
+      4024482 mates make up the pairs; of these:
+        1371238 (34.07%) aligned 0 times
+        2526899 (62.79%) aligned exactly 1 time
+        126345 (3.14%) aligned >1 times
+85.69% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR14333325.fastq.gz_bam
+HISAT2 complete for SRR14333325.fastq.gz Sat Jun 12 00:46:39 EDT 2021
+Starting alignment of sample SRR14333326.fastq.gz Sat Jun 12 00:46:39 EDT 2021
+3795669 reads; of these:
+  3795669 (100.00%) were paired; of these:
+    3269228 (86.13%) aligned concordantly 0 times
+    513908 (13.54%) aligned concordantly exactly 1 time
+    12533 (0.33%) aligned concordantly >1 times
+    ----
+    3269228 pairs aligned concordantly 0 times; of these:
+      1638801 (50.13%) aligned discordantly 1 time
+    ----
+    1630427 pairs aligned 0 times concordantly or discordantly; of these:
+      3260854 mates make up the pairs; of these:
+        1315037 (40.33%) aligned 0 times
+        1864132 (57.17%) aligned exactly 1 time
+        81685 (2.51%) aligned >1 times
+82.68% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR14333326.fastq.gz_bam
+HISAT2 complete for SRR14333326.fastq.gz Sat Jun 12 00:48:51 EDT 2021
+Starting alignment of sample SRR14333327.fastq.gz Sat Jun 12 00:48:51 EDT 2021
+4472222 reads; of these:
+  4472222 (100.00%) were paired; of these:
+    3932703 (87.94%) aligned concordantly 0 times
+    526273 (11.77%) aligned concordantly exactly 1 time
+    13246 (0.30%) aligned concordantly >1 times
+    ----
+    3932703 pairs aligned concordantly 0 times; of these:
+      1874465 (47.66%) aligned discordantly 1 time
+    ----
+    2058238 pairs aligned 0 times concordantly or discordantly; of these:
+      4116476 mates make up the pairs; of these:
+        1847784 (44.89%) aligned 0 times
+        2160468 (52.48%) aligned exactly 1 time
+        108224 (2.63%) aligned >1 times
+79.34% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR14333327.fastq.gz_bam
+HISAT2 complete for SRR14333327.fastq.gz Sat Jun 12 00:51:56 EDT 2021
+HISAT2 complete. Now we can will assess the alignment with fastqc. Sat Jun 12 00:51:56 EDT 2021
+Started analysis of SRR14333319.fastq.gz.bam
+Approx 5% complete for SRR14333319.fastq.gz.bam
+Approx 10% complete for SRR14333319.fastq.gz.bam
+Approx 15% complete for SRR14333319.fastq.gz.bam
+Approx 20% complete for SRR14333319.fastq.gz.bam
+Approx 25% complete for SRR14333319.fastq.gz.bam
+Approx 30% complete for SRR14333319.fastq.gz.bam
+Approx 35% complete for SRR14333319.fastq.gz.bam
+Approx 40% complete for SRR14333319.fastq.gz.bam
+Approx 45% complete for SRR14333319.fastq.gz.bam
+Approx 50% complete for SRR14333319.fastq.gz.bam
+Approx 55% complete for SRR14333319.fastq.gz.bam
+Approx 60% complete for SRR14333319.fastq.gz.bam
+Approx 65% complete for SRR14333319.fastq.gz.bam
+Approx 70% complete for SRR14333319.fastq.gz.bam
+Approx 75% complete for SRR14333319.fastq.gz.bam
+Approx 80% complete for SRR14333319.fastq.gz.bam
+Approx 85% complete for SRR14333319.fastq.gz.bam
+Approx 90% complete for SRR14333319.fastq.gz.bam
+Approx 95% complete for SRR14333319.fastq.gz.bam
+Approx 100% complete for SRR14333319.fastq.gz.bam
+Analysis complete for SRR14333319.fastq.gz.bam
+Started analysis of SRR14333320.fastq.gz.bam
+Approx 5% complete for SRR14333320.fastq.gz.bam
+Approx 10% complete for SRR14333320.fastq.gz.bam
+Approx 15% complete for SRR14333320.fastq.gz.bam
+Approx 20% complete for SRR14333320.fastq.gz.bam
+Approx 25% complete for SRR14333320.fastq.gz.bam
+Approx 30% complete for SRR14333320.fastq.gz.bam
+Approx 35% complete for SRR14333320.fastq.gz.bam
+Approx 40% complete for SRR14333320.fastq.gz.bam
+Approx 45% complete for SRR14333320.fastq.gz.bam
+Approx 50% complete for SRR14333320.fastq.gz.bam
+Approx 55% complete for SRR14333320.fastq.gz.bam
+Approx 60% complete for SRR14333320.fastq.gz.bam
+Approx 65% complete for SRR14333320.fastq.gz.bam
+Approx 70% complete for SRR14333320.fastq.gz.bam
+Approx 75% complete for SRR14333320.fastq.gz.bam
+Approx 80% complete for SRR14333320.fastq.gz.bam
+Approx 85% complete for SRR14333320.fastq.gz.bam
+Approx 90% complete for SRR14333320.fastq.gz.bam
+Approx 95% complete for SRR14333320.fastq.gz.bam
+Approx 100% complete for SRR14333320.fastq.gz.bam
+Analysis complete for SRR14333320.fastq.gz.bam
+Started analysis of SRR14333321.fastq.gz.bam
+Approx 5% complete for SRR14333321.fastq.gz.bam
+Approx 10% complete for SRR14333321.fastq.gz.bam
+Approx 15% complete for SRR14333321.fastq.gz.bam
+Approx 20% complete for SRR14333321.fastq.gz.bam
+Approx 25% complete for SRR14333321.fastq.gz.bam
+Approx 30% complete for SRR14333321.fastq.gz.bam
+Approx 35% complete for SRR14333321.fastq.gz.bam
+Approx 40% complete for SRR14333321.fastq.gz.bam
+Approx 45% complete for SRR14333321.fastq.gz.bam
+Approx 50% complete for SRR14333321.fastq.gz.bam
+Approx 55% complete for SRR14333321.fastq.gz.bam
+Approx 60% complete for SRR14333321.fastq.gz.bam
+Approx 65% complete for SRR14333321.fastq.gz.bam
+Approx 70% complete for SRR14333321.fastq.gz.bam
+Approx 75% complete for SRR14333321.fastq.gz.bam
+Approx 80% complete for SRR14333321.fastq.gz.bam
+Approx 85% complete for SRR14333321.fastq.gz.bam
+Approx 90% complete for SRR14333321.fastq.gz.bam
+Approx 95% complete for SRR14333321.fastq.gz.bam
+Approx 100% complete for SRR14333321.fastq.gz.bam
+Analysis complete for SRR14333321.fastq.gz.bam
+Started analysis of SRR14333322.fastq.gz.bam
+Approx 5% complete for SRR14333322.fastq.gz.bam
+Approx 10% complete for SRR14333322.fastq.gz.bam
+Approx 15% complete for SRR14333322.fastq.gz.bam
+Approx 20% complete for SRR14333322.fastq.gz.bam
+Approx 25% complete for SRR14333322.fastq.gz.bam
+Approx 30% complete for SRR14333322.fastq.gz.bam
+Approx 35% complete for SRR14333322.fastq.gz.bam
+Approx 40% complete for SRR14333322.fastq.gz.bam
+Approx 45% complete for SRR14333322.fastq.gz.bam
+Approx 50% complete for SRR14333322.fastq.gz.bam
+Approx 55% complete for SRR14333322.fastq.gz.bam
+Approx 60% complete for SRR14333322.fastq.gz.bam
+Approx 65% complete for SRR14333322.fastq.gz.bam
+Approx 70% complete for SRR14333322.fastq.gz.bam
+Approx 75% complete for SRR14333322.fastq.gz.bam
+Approx 80% complete for SRR14333322.fastq.gz.bam
+Approx 85% complete for SRR14333322.fastq.gz.bam
+Approx 90% complete for SRR14333322.fastq.gz.bam
+Approx 95% complete for SRR14333322.fastq.gz.bam
+Approx 100% complete for SRR14333322.fastq.gz.bam
+Analysis complete for SRR14333322.fastq.gz.bam
+Started analysis of SRR14333323.fastq.gz.bam
+Approx 5% complete for SRR14333323.fastq.gz.bam
+Approx 10% complete for SRR14333323.fastq.gz.bam
+Approx 15% complete for SRR14333323.fastq.gz.bam
+Approx 20% complete for SRR14333323.fastq.gz.bam
+Approx 25% complete for SRR14333323.fastq.gz.bam
+Approx 30% complete for SRR14333323.fastq.gz.bam
+Approx 35% complete for SRR14333323.fastq.gz.bam
+Approx 40% complete for SRR14333323.fastq.gz.bam
+Approx 45% complete for SRR14333323.fastq.gz.bam
+Approx 50% complete for SRR14333323.fastq.gz.bam
+Approx 55% complete for SRR14333323.fastq.gz.bam
+Approx 60% complete for SRR14333323.fastq.gz.bam
+Approx 65% complete for SRR14333323.fastq.gz.bam
+Approx 70% complete for SRR14333323.fastq.gz.bam
+Approx 75% complete for SRR14333323.fastq.gz.bam
+Approx 80% complete for SRR14333323.fastq.gz.bam
+Approx 85% complete for SRR14333323.fastq.gz.bam
+Approx 90% complete for SRR14333323.fastq.gz.bam
+Approx 95% complete for SRR14333323.fastq.gz.bam
+Approx 100% complete for SRR14333323.fastq.gz.bam
+Analysis complete for SRR14333323.fastq.gz.bam
+Started analysis of SRR14333324.fastq.gz.bam
+Approx 5% complete for SRR14333324.fastq.gz.bam
+Approx 10% complete for SRR14333324.fastq.gz.bam
+Approx 15% complete for SRR14333324.fastq.gz.bam
+Approx 20% complete for SRR14333324.fastq.gz.bam
+Approx 25% complete for SRR14333324.fastq.gz.bam
+Approx 30% complete for SRR14333324.fastq.gz.bam
+Approx 35% complete for SRR14333324.fastq.gz.bam
+Approx 40% complete for SRR14333324.fastq.gz.bam
+Approx 45% complete for SRR14333324.fastq.gz.bam
+Approx 50% complete for SRR14333324.fastq.gz.bam
+Approx 55% complete for SRR14333324.fastq.gz.bam
+Approx 60% complete for SRR14333324.fastq.gz.bam
+Approx 65% complete for SRR14333324.fastq.gz.bam
+Approx 70% complete for SRR14333324.fastq.gz.bam
+Approx 75% complete for SRR14333324.fastq.gz.bam
+Approx 80% complete for SRR14333324.fastq.gz.bam
+Approx 85% complete for SRR14333324.fastq.gz.bam
+Approx 90% complete for SRR14333324.fastq.gz.bam
+Approx 95% complete for SRR14333324.fastq.gz.bam
+Approx 100% complete for SRR14333324.fastq.gz.bam
+Analysis complete for SRR14333324.fastq.gz.bam
+Started analysis of SRR14333325.fastq.gz.bam
+Approx 5% complete for SRR14333325.fastq.gz.bam
+Approx 10% complete for SRR14333325.fastq.gz.bam
+Approx 15% complete for SRR14333325.fastq.gz.bam
+Approx 20% complete for SRR14333325.fastq.gz.bam
+Approx 25% complete for SRR14333325.fastq.gz.bam
+Approx 30% complete for SRR14333325.fastq.gz.bam
+Approx 35% complete for SRR14333325.fastq.gz.bam
+Approx 40% complete for SRR14333325.fastq.gz.bam
+Approx 45% complete for SRR14333325.fastq.gz.bam
+Approx 50% complete for SRR14333325.fastq.gz.bam
+Approx 55% complete for SRR14333325.fastq.gz.bam
+Approx 60% complete for SRR14333325.fastq.gz.bam
+Approx 65% complete for SRR14333325.fastq.gz.bam
+Approx 70% complete for SRR14333325.fastq.gz.bam
+Approx 75% complete for SRR14333325.fastq.gz.bam
+Approx 80% complete for SRR14333325.fastq.gz.bam
+Approx 85% complete for SRR14333325.fastq.gz.bam
+Approx 90% complete for SRR14333325.fastq.gz.bam
+Approx 95% complete for SRR14333325.fastq.gz.bam
+Approx 100% complete for SRR14333325.fastq.gz.bam
+Analysis complete for SRR14333325.fastq.gz.bam
+Started analysis of SRR14333326.fastq.gz.bam
+Approx 5% complete for SRR14333326.fastq.gz.bam
+Approx 10% complete for SRR14333326.fastq.gz.bam
+Approx 15% complete for SRR14333326.fastq.gz.bam
+Approx 20% complete for SRR14333326.fastq.gz.bam
+Approx 25% complete for SRR14333326.fastq.gz.bam
+Approx 30% complete for SRR14333326.fastq.gz.bam
+Approx 35% complete for SRR14333326.fastq.gz.bam
+Approx 40% complete for SRR14333326.fastq.gz.bam
+Approx 45% complete for SRR14333326.fastq.gz.bam
+Approx 50% complete for SRR14333326.fastq.gz.bam
+Approx 55% complete for SRR14333326.fastq.gz.bam
+Approx 60% complete for SRR14333326.fastq.gz.bam
+Approx 65% complete for SRR14333326.fastq.gz.bam
+Approx 70% complete for SRR14333326.fastq.gz.bam
+Approx 75% complete for SRR14333326.fastq.gz.bam
+Approx 80% complete for SRR14333326.fastq.gz.bam
+Approx 85% complete for SRR14333326.fastq.gz.bam
+Approx 90% complete for SRR14333326.fastq.gz.bam
+Approx 95% complete for SRR14333326.fastq.gz.bam
+Approx 100% complete for SRR14333326.fastq.gz.bam
+Analysis complete for SRR14333326.fastq.gz.bam
+Started analysis of SRR14333327.fastq.gz.bam
+Approx 5% complete for SRR14333327.fastq.gz.bam
+Approx 10% complete for SRR14333327.fastq.gz.bam
+Approx 15% complete for SRR14333327.fastq.gz.bam
+Approx 20% complete for SRR14333327.fastq.gz.bam
+Approx 25% complete for SRR14333327.fastq.gz.bam
+Approx 30% complete for SRR14333327.fastq.gz.bam
+Approx 35% complete for SRR14333327.fastq.gz.bam
+Approx 40% complete for SRR14333327.fastq.gz.bam
+Approx 45% complete for SRR14333327.fastq.gz.bam
+Approx 50% complete for SRR14333327.fastq.gz.bam
+Approx 55% complete for SRR14333327.fastq.gz.bam
+Approx 60% complete for SRR14333327.fastq.gz.bam
+Approx 65% complete for SRR14333327.fastq.gz.bam
+Approx 70% complete for SRR14333327.fastq.gz.bam
+Approx 75% complete for SRR14333327.fastq.gz.bam
+Approx 80% complete for SRR14333327.fastq.gz.bam
+Approx 85% complete for SRR14333327.fastq.gz.bam
+Approx 90% complete for SRR14333327.fastq.gz.bam
+Approx 95% complete for SRR14333327.fastq.gz.bam
+Approx 100% complete for SRR14333327.fastq.gz.bam
+Analysis complete for SRR14333327.fastq.gz.bam
+[WARNING]         multiqc : MultiQC Version v1.10.1 now available!
+[INFO   ]         multiqc : This is MultiQC v1.7
+[INFO   ]         multiqc : Template    : default
+[INFO   ]         multiqc : Searching './'
+[INFO   ]          fastqc : Found 9 reports
+[INFO   ]         multiqc : Compressing plot data
+[INFO   ]         multiqc : Report      : multiqc_report.html
+[INFO   ]         multiqc : Data        : multiqc_data
+[INFO   ]         multiqc : MultiQC complete
+Assessment of alignment complete! Time to quantify our reads :) Sat Jun 12 01:03:04 EDT 2021

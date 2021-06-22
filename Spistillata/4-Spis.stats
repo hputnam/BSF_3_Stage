@@ -1,0 +1,7 @@
+# gffcompare v0.12.1 | Command line was:
+#gffcompare -r ../ref/Spis.genome.annotation.gff3 -R -G -V -o Spis -i ../stringtie_mergelist.txt
+#
+
+ Total union super-loci across all input datasets: 25740 
+  (1278 multi-transcript, ~1.1 transcripts per locus)
+27383 out of 27383 consensus transcripts written in Spis.combined.gtf (0 discarded as redundant)

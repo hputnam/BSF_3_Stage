@@ -1,0 +1,9 @@
+AH1	/data/putnamlab/erin_chille/BSF_3_Stage/Mcap/stringtie_out_files/AH1.fastq.gz.bam.gtf
+AH2	/data/putnamlab/erin_chille/BSF_3_Stage/Mcap/stringtie_out_files/AH2.fastq.gz.bam.gtf
+AH3	/data/putnamlab/erin_chille/BSF_3_Stage/Mcap/stringtie_out_files/AH3.fastq.gz.bam.gtf
+AH4	/data/putnamlab/erin_chille/BSF_3_Stage/Mcap/stringtie_out_files/AH4.fastq.gz.bam.gtf
+AH5	/data/putnamlab/erin_chille/BSF_3_Stage/Mcap/stringtie_out_files/AH5.fastq.gz.bam.gtf
+AH6	/data/putnamlab/erin_chille/BSF_3_Stage/Mcap/stringtie_out_files/AH6.fastq.gz.bam.gtf
+AH7	/data/putnamlab/erin_chille/BSF_3_Stage/Mcap/stringtie_out_files/AH7.fastq.gz.bam.gtf
+AH8	/data/putnamlab/erin_chille/BSF_3_Stage/Mcap/stringtie_out_files/AH8.fastq.gz.bam.gtf
+AH9	/data/putnamlab/erin_chille/BSF_3_Stage/Mcap/stringtie_out_files/AH9.fastq.gz.bam.gtf

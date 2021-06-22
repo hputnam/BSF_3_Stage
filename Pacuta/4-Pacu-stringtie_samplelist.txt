@@ -1,0 +1,9 @@
+SRR3051863	/data/putnamlab/erin_chille/BSF_3_Stage/Pacu/stringtie_out_files/SRR3051863.fastq.gz.bam.gtf
+SRR3051864	/data/putnamlab/erin_chille/BSF_3_Stage/Pacu/stringtie_out_files/SRR3051864.fastq.gz.bam.gtf
+SRR3051865	/data/putnamlab/erin_chille/BSF_3_Stage/Pacu/stringtie_out_files/SRR3051865.fastq.gz.bam.gtf
+SRR3051866	/data/putnamlab/erin_chille/BSF_3_Stage/Pacu/stringtie_out_files/SRR3051866.fastq.gz.bam.gtf
+SRR3051867	/data/putnamlab/erin_chille/BSF_3_Stage/Pacu/stringtie_out_files/SRR3051867.fastq.gz.bam.gtf
+SRR3051868	/data/putnamlab/erin_chille/BSF_3_Stage/Pacu/stringtie_out_files/SRR3051868.fastq.gz.bam.gtf
+SRR3051869	/data/putnamlab/erin_chille/BSF_3_Stage/Pacu/stringtie_out_files/SRR3051869.fastq.gz.bam.gtf
+SRR3051870	/data/putnamlab/erin_chille/BSF_3_Stage/Pacu/stringtie_out_files/SRR3051870.fastq.gz.bam.gtf
+SRR3051871	/data/putnamlab/erin_chille/BSF_3_Stage/Pacu/stringtie_out_files/SRR3051871.fastq.gz.bam.gtf

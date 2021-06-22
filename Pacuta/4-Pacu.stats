@@ -1,0 +1,7 @@
+# gffcompare v0.12.1 | Command line was:
+#gffcompare -r ../ref/Structural_annotation_experimental.gff -R -G -V -o Pacu -i ../stringtie_mergelist.txt
+#
+
+ Total union super-loci across all input datasets: 35245 
+  (11105 multi-transcript, ~1.8 transcripts per locus)
+63781 out of 63781 consensus transcripts written in Pacu.combined.gtf (0 discarded as redundant)

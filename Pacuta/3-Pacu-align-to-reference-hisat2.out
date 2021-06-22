@@ -1,0 +1,93 @@
+Loading programs Wed Jun 16 15:19:21 EDT 2021
+Aligning paired end reads Wed Jun 16 15:19:48 EDT 2021
+Starting alignment of sample SRR3051863.fastq.gz Wed Jun 16 15:19:48 EDT 2021
+10597603 reads; of these:
+  10597603 (100.00%) were unpaired; of these:
+    2325996 (21.95%) aligned 0 times
+    8170062 (77.09%) aligned exactly 1 time
+    101545 (0.96%) aligned >1 times
+78.05% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR3051863.fastq.gz.bam
+HISAT2 complete for SRR3051863.fastq.gz Wed Jun 16 15:31:00 EDT 2021
+Starting alignment of sample SRR3051864.fastq.gz Wed Jun 16 15:31:00 EDT 2021
+13695453 reads; of these:
+  13695453 (100.00%) were unpaired; of these:
+    3014609 (22.01%) aligned 0 times
+    10543350 (76.98%) aligned exactly 1 time
+    137494 (1.00%) aligned >1 times
+77.99% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR3051864.fastq.gz.bam
+HISAT2 complete for SRR3051864.fastq.gz Wed Jun 16 15:41:20 EDT 2021
+Starting alignment of sample SRR3051865.fastq.gz Wed Jun 16 15:41:20 EDT 2021
+13944229 reads; of these:
+  13944229 (100.00%) were unpaired; of these:
+    3222241 (23.11%) aligned 0 times
+    10581818 (75.89%) aligned exactly 1 time
+    140170 (1.01%) aligned >1 times
+76.89% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR3051865.fastq.gz.bam
+HISAT2 complete for SRR3051865.fastq.gz Wed Jun 16 16:10:24 EDT 2021
+Starting alignment of sample SRR3051866.fastq.gz Wed Jun 16 16:10:24 EDT 2021
+11629580 reads; of these:
+  11629580 (100.00%) were unpaired; of these:
+    2726721 (23.45%) aligned 0 times
+    8812873 (75.78%) aligned exactly 1 time
+    89986 (0.77%) aligned >1 times
+76.55% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR3051866.fastq.gz.bam
+HISAT2 complete for SRR3051866.fastq.gz Wed Jun 16 16:39:23 EDT 2021
+Starting alignment of sample SRR3051867.fastq.gz Wed Jun 16 16:39:23 EDT 2021
+11644045 reads; of these:
+  11644045 (100.00%) were unpaired; of these:
+    2548869 (21.89%) aligned 0 times
+    9004656 (77.33%) aligned exactly 1 time
+    90520 (0.78%) aligned >1 times
+78.11% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR3051867.fastq.gz.bam
+HISAT2 complete for SRR3051867.fastq.gz Wed Jun 16 18:04:13 EDT 2021
+Starting alignment of sample SRR3051868.fastq.gz Wed Jun 16 18:04:13 EDT 2021
+12047852 reads; of these:
+  12047852 (100.00%) were unpaired; of these:
+    3041836 (25.25%) aligned 0 times
+    8915801 (74.00%) aligned exactly 1 time
+    90215 (0.75%) aligned >1 times
+74.75% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR3051868.fastq.gz.bam
+HISAT2 complete for SRR3051868.fastq.gz Wed Jun 16 18:46:04 EDT 2021
+Starting alignment of sample SRR3051869.fastq.gz Wed Jun 16 18:46:04 EDT 2021
+14167794 reads; of these:
+  14167794 (100.00%) were unpaired; of these:
+    3801493 (26.83%) aligned 0 times
+    10233731 (72.23%) aligned exactly 1 time
+    132570 (0.94%) aligned >1 times
+73.17% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR3051869.fastq.gz.bam
+HISAT2 complete for SRR3051869.fastq.gz Wed Jun 16 19:22:54 EDT 2021
+Starting alignment of sample SRR3051870.fastq.gz Wed Jun 16 19:22:54 EDT 2021
+12407570 reads; of these:
+  12407570 (100.00%) were unpaired; of these:
+    3069518 (24.74%) aligned 0 times
+    9222815 (74.33%) aligned exactly 1 time
+    115237 (0.93%) aligned >1 times
+75.26% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR3051870.fastq.gz.bam
+HISAT2 complete for SRR3051870.fastq.gz Wed Jun 16 19:53:41 EDT 2021
+Starting alignment of sample SRR3051871.fastq.gz Wed Jun 16 19:53:41 EDT 2021
+13443296 reads; of these:
+  13443296 (100.00%) were unpaired; of these:
+    3624158 (26.96%) aligned 0 times
+    9695085 (72.12%) aligned exactly 1 time
+    124053 (0.92%) aligned >1 times
+73.04% overall alignment rate
+[bam_sort_core] merging from 0 files and 20 in-memory blocks...
+SRR3051871.fastq.gz.bam
+HISAT2 complete for SRR3051871.fastq.gz Wed Jun 16 21:11:30 EDT 2021
+Alignment complete! Time to quantify our reads :) Wed Jun 16 21:11:30 EDT 2021

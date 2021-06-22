@@ -1,7 +1,7 @@
 ---
-title: "Mcap Developmental Timeseries WGCNA"
+title: "BSF 3 Stage Gene Expression Overview and VST-count Generation"
 author: "Erin Chille"
-date: "Last updated 2020/11/03"
+date: "Last updated 2021/06/21"
 output: html_document
 ---
 
@@ -11,10 +11,6 @@ knitr::opts_chunk$set(echo = TRUE)
 # The following setting is important, do not omit.
 options(stringsAsFactors = FALSE) #Set Strings to character
 ```
-
-# BSF Biomineralization Project: RNAseq Expression and Functional Enrichment Analysis 
-
-This script is based off of Langfelder P, Horvath S (2008) WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics 2008, 9:559 ([link to paper](http://www.biomedcentral.com/1471-2105/9/559))
 
 ## Set up workspace
 
@@ -27,20 +23,22 @@ library("RColorBrewer")
 library("pheatmap")
 ```
 
-## Data input, cleaning, and pre-processing
+## Stylophora pistillata
+
+### Data input, cleaning, and pre-processing
 
 Import the data files 
 ```{r}
 treatmentinfo <- read.csv("Spistillata/5-Spis-SampleInfo.csv", header = TRUE, sep = ",")
 head(treatmentinfo)
 
-gcount <- as.data.frame(read.csv("Spistillata/5-Spis-GeneCountMatrix.csv", row.names="gene_id"), colClasses = double)
+gcount <- as.data.frame(read.csv("Spistillata/4-Spis-GeneCountMatrix.csv", row.names="gene_id"), colClasses = double)
 head(gcount)
 dim(gcount)
 ```
 
 #### Quality-filter gene counts  
-Pre-filtering our dataset to reduce the memory size dataframe, increase the speed of the transformation and testing functions, and improve quality of statistical analysis by removing low-coverage counts. Removed counts could represent outliers in the data and removing these improves sensitivity of statistical tests. Here we will filter out the genes that are only present in fewer than two of the 24 ambient samples.
+Pre-filtering our dataset to reduce the memory size dataframe, increases the speed of the transformation and testing functions, and improves the quality of statistical analysis by removing low-coverage counts. Removed counts could represent outliers in the data and removing these improves sensitivity of statistical tests. Here we will filter out the genes that are only present in fewer than two of the 9 samples. This means that two or more samples have to have an abundance of 10 or greater in order to be kept for further analysis.
 ```{r}
 dim(treatmentinfo) #rows should be 9
 
@@ -149,3 +147,250 @@ Save vst-transformed data as a csv
 write.csv(as.data.frame(assay(gvst)), "Spistillata/5-Spis-vst-transformed-genecounts.csv")
 ```
 
+# Montipora capitata
+
+### Data input, cleaning, and pre-processing
+
+Import the data files 
+```{r}
+treatmentinfo <- read.csv("Mcapitata/5-Mcap-SampleInfo.csv", header = TRUE, sep = ",")
+head(treatmentinfo)
+
+gcount <- as.data.frame(read.csv("Mcapitata/4-Mcap-GeneCountMatrix.csv", row.names="gene_id"), colClasses = double)
+head(gcount)
+dim(gcount)
+```
+
+#### Quality-filter gene counts  
+Pre-filtering our dataset to reduce the memory size dataframe, increases the speed of the transformation and testing functions, and improves the quality of statistical analysis by removing low-coverage counts. Removed counts could represent outliers in the data and removing these improves sensitivity of statistical tests. Here we will filter out the genes that are only present in fewer than two of the 9 samples. This means that two or more samples have to have an abundance of 10 or greater in order to be kept for further analysis.
+```{r}
+dim(treatmentinfo) #rows should be 9
+
+#create filter for the counts data
+#gfiltdev <- rowSums(count(gcount)) > 0
+#set filter values for PoverA, P=100% percent of the samples have counts over A=10. This means that only 2 out of 9 (0.22) samples need to have counts over 10. Our smallest sample size for our life stages is two (fertilized egg, mid-gastrula, early-gastrula). By setting 2/9 as the P, this means if a particular gene is expressed only in 1 of these smallest life stages, it will be included in the analysis.
+filt <- filterfun(pOverA(0.22,10))
+
+#create filter for the counts data
+gfiltdev <- genefilter(gcount, filt)
+
+#identify genes to keep by count filter
+gkeepdev <- gcount[gfiltdev,]
+
+#identify genes to keep by count filter
+gkeepdev <- gcount[gfiltdev,]
+
+#identify gene lists
+gn.keepdev <- rownames(gkeepdev)
+
+#gene count data filtered in PoverA, P percent of the samples have counts over A
+gcount_filt <- as.data.frame(gcount[which(rownames(gcount) %in% gn.keepdev),])
+
+#How many rows do we have before and after filtering?
+nrow(gcount) #Before
+nrow(gcount_filt) #After
+```
+
+### Quality-check of datasets  
+In order for the DESeq2 algorithms to work, the SampleIDs on the treatmentinfo file and count matrices have to match exactly and in the same order. The following R clump will check to make sure that these match.
+```{r}
+#Checking that all row and column names match. Should return "TRUE"
+treatmentinfo$sampleID == colnames(gcount_filt)
+```
+
+### Read normalization
+We are now going normalize our read counts using VST-normalization in DESeq2
+
+#### Construct the DESeq2 dataset
+
+Merge the treatment and time_point columns into a new column , group. Set group as a factor.
+```{r}
+treatmentinfo$timepoint <- factor(treatmentinfo$timepoint, levels = c("I", "II", "III"))
+str(treatmentinfo)
+```
+
+Create a DESeqDataSet design from gene count matrix and labels. Here we set the design to look at time_point to test for any differences in gene expression across timepoints.
+```{r}
+#Set DESeq2 design
+gdds <- DESeqDataSetFromMatrix(countData = gcount_filt,
+                              colData = treatmentinfo,
+                              design = ~timepoint)
+```
+
+#### Log-transform the count data
+First we are going to log-transform the data using a variance stabilizing transforamtion (VST). This is only for visualization purposes. Essentially, this is roughly similar to putting the data on the log2 scale. It will deal with the sampling variability of low counts by calculating within-group variability (if blind=FALSE). Importantly, it does not use the design to remove variation in the data, and so can be used to examine if there may be any variability do to technical factors such as extraction batch effects.
+
+To do this we first need to calculate the size factors of our samples. This is a rough estimate of how many reads each sample contains compared to the others. In order to use VST (the faster log2 transforming process) to log-transform our data, the size factors need to be less than 4. Otherwise, there could be artefacts in our results.
+```{r}
+SF.gdds <- estimateSizeFactors(gdds) #estimate size factors to determine if we can use vst  to transform our data. Size factors should be less than for to use vst
+print(sizeFactors(SF.gdds)) #View size factors
+```
+
+Our size factors are all less than 4, so we can use VST!
+```{r}
+gvst <- vst(gdds, blind=FALSE) #apply a variance stabilizing transforamtion to minimize effects of small counts and normalize wrt library size
+head(assay(gvst), 3) #view transformed gene count data
+```
+
+##### Plot a heatmap of sample-to-sample distances
+```{r}
+gsampleDists <- dist(t(assay(gvst))) #calculate distance matix
+gsampleDistMatrix <- as.matrix(gsampleDists) #distance matrix
+rownames(gsampleDistMatrix) <- colnames(gvst) #assign row names
+colnames(gsampleDistMatrix) <- NULL #assign col names
+colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255) #assign colors
+pheatmap(gsampleDistMatrix, #plot matrix
+         clustering_distance_rows=gsampleDists, #cluster rows
+         clustering_distance_cols=gsampleDists, #cluster columns
+         col=colors) #set colors
+```
+
+
+##### Principal component plot of samples
+```{r}
+gPCAdata <- plotPCA(gvst, intgroup = c("timepoint"), returnData=TRUE)
+percentVar <- round(100*attr(gPCAdata, "percentVar")) #plot PCA of samples with all data
+
+ggplot(gPCAdata, aes(PC1, PC2, shape=timepoint)) + 
+  geom_point(size=3) +
+  xlab(paste0("PC1: ",percentVar[1],"% variance")) +
+  ylab(paste0("PC2: ",percentVar[2],"% variance")) +
+  scale_shape_manual(values = c("I"=3, "II"=14, "III"=8)) +
+  coord_fixed() +
+    theme_bw() + #Set background color
+  theme(panel.border = element_blank(), # Set border
+                     #panel.grid.major = element_blank(), #Set major gridlines 
+                     #panel.grid.minor = element_blank(), #Set minor gridlines
+                     axis.line = element_line(colour = "black"), #Set axes color
+        plot.background=element_blank()) # + #Set the plot background
+  #theme(legend.position = ("none")) #set title attributes
+```
+
+Save vst-transformed data as a csv
+```{r}
+write.csv(as.data.frame(assay(gvst)), "Mcapitata/5-Mcap-vst-transformed-genecounts.csv")
+```
+
+# Pocillopora acuta
+
+### Data input, cleaning, and pre-processing
+
+Import the data files 
+```{r}
+treatmentinfo <- read.csv("Pacuta/5-Pacu-SampleInfo.csv", header = TRUE, sep = ",")
+head(treatmentinfo)
+
+gcount <- as.data.frame(read.csv("Pacuta/4-Pacu-GeneCountMatrix.csv", row.names="gene_id"), colClasses = double)
+head(gcount)
+dim(gcount)
+```
+
+#### Quality-filter gene counts  
+Pre-filtering our dataset to reduce the memory size dataframe, increases the speed of the transformation and testing functions, and improves the quality of statistical analysis by removing low-coverage counts. Removed counts could represent outliers in the data and removing these improves sensitivity of statistical tests. Here we will filter out the genes that are only present in fewer than two of the 9 samples. This means that two or more samples have to have an abundance of 10 or greater in order to be kept for further analysis.
+```{r}
+dim(treatmentinfo) #rows should be 9
+
+#create filter for the counts data
+#gfiltdev <- rowSums(count(gcount)) > 0
+#set filter values for PoverA, P=100% percent of the samples have counts over A=10. This means that only 2 out of 9 (0.22) samples need to have counts over 10. Our smallest sample size for our life stages is two (fertilized egg, mid-gastrula, early-gastrula). By setting 2/9 as the P, this means if a particular gene is expressed only in 1 of these smallest life stages, it will be included in the analysis.
+filt <- filterfun(pOverA(0.22,10))
+
+#create filter for the counts data
+gfiltdev <- genefilter(gcount, filt)
+
+#identify genes to keep by count filter
+gkeepdev <- gcount[gfiltdev,]
+
+#identify genes to keep by count filter
+gkeepdev <- gcount[gfiltdev,]
+
+#identify gene lists
+gn.keepdev <- rownames(gkeepdev)
+
+#gene count data filtered in PoverA, P percent of the samples have counts over A
+gcount_filt <- as.data.frame(gcount[which(rownames(gcount) %in% gn.keepdev),])
+
+#How many rows do we have before and after filtering?
+nrow(gcount) #Before
+nrow(gcount_filt) #After
+```
+
+### Quality-check of datasets  
+In order for the DESeq2 algorithms to work, the SampleIDs on the treatmentinfo file and count matrices have to match exactly and in the same order. The following R clump will check to make sure that these match.
+```{r}
+#Checking that all row and column names match. Should return "TRUE"
+treatmentinfo$sampleID == colnames(gcount_filt)
+```
+
+### Read normalization
+We are now going normalize our read counts using VST-normalization in DESeq2
+
+#### Construct the DESeq2 dataset
+
+Merge the treatment and time_point columns into a new column , group. Set group as a factor.
+```{r}
+treatmentinfo$timepoint <- factor(treatmentinfo$timepoint, levels = c("I", "II", "III"))
+str(treatmentinfo)
+```
+
+Create a DESeqDataSet design from gene count matrix and labels. Here we set the design to look at time_point to test for any differences in gene expression across timepoints.
+```{r}
+#Set DESeq2 design
+gdds <- DESeqDataSetFromMatrix(countData = gcount_filt,
+                              colData = treatmentinfo,
+                              design = ~timepoint)
+```
+
+#### Log-transform the count data
+First we are going to log-transform the data using a variance stabilizing transforamtion (VST). This is only for visualization purposes. Essentially, this is roughly similar to putting the data on the log2 scale. It will deal with the sampling variability of low counts by calculating within-group variability (if blind=FALSE). Importantly, it does not use the design to remove variation in the data, and so can be used to examine if there may be any variability do to technical factors such as extraction batch effects.
+
+To do this we first need to calculate the size factors of our samples. This is a rough estimate of how many reads each sample contains compared to the others. In order to use VST (the faster log2 transforming process) to log-transform our data, the size factors need to be less than 4. Otherwise, there could be artefacts in our results.
+```{r}
+SF.gdds <- estimateSizeFactors(gdds) #estimate size factors to determine if we can use vst  to transform our data. Size factors should be less than for to use vst
+print(sizeFactors(SF.gdds)) #View size factors
+```
+
+Our size factors are all less than 4, so we can use VST!
+```{r}
+gvst <- vst(gdds, blind=FALSE) #apply a variance stabilizing transforamtion to minimize effects of small counts and normalize wrt library size
+head(assay(gvst), 3) #view transformed gene count data
+```
+
+##### Plot a heatmap of sample-to-sample distances
+```{r}
+gsampleDists <- dist(t(assay(gvst))) #calculate distance matix
+gsampleDistMatrix <- as.matrix(gsampleDists) #distance matrix
+rownames(gsampleDistMatrix) <- colnames(gvst) #assign row names
+colnames(gsampleDistMatrix) <- NULL #assign col names
+colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255) #assign colors
+pheatmap(gsampleDistMatrix, #plot matrix
+         clustering_distance_rows=gsampleDists, #cluster rows
+         clustering_distance_cols=gsampleDists, #cluster columns
+         col=colors) #set colors
+```
+
+
+##### Principal component plot of samples
+```{r}
+gPCAdata <- plotPCA(gvst, intgroup = c("timepoint"), returnData=TRUE)
+percentVar <- round(100*attr(gPCAdata, "percentVar")) #plot PCA of samples with all data
+
+ggplot(gPCAdata, aes(PC1, PC2, shape=timepoint)) + 
+  geom_point(size=3) +
+  xlab(paste0("PC1: ",percentVar[1],"% variance")) +
+  ylab(paste0("PC2: ",percentVar[2],"% variance")) +
+  scale_shape_manual(values = c("I"=3, "II"=14, "III"=8)) +
+  coord_fixed() +
+    theme_bw() + #Set background color
+  theme(panel.border = element_blank(), # Set border
+                     #panel.grid.major = element_blank(), #Set major gridlines 
+                     #panel.grid.minor = element_blank(), #Set minor gridlines
+                     axis.line = element_line(colour = "black"), #Set axes color
+        plot.background=element_blank()) # + #Set the plot background
+  #theme(legend.position = ("none")) #set title attributes
+```
+
+Save vst-transformed data as a csv
+```{r}
+write.csv(as.data.frame(assay(gvst)), "Pacuta/5-Pacu-vst-transformed-genecounts.csv")
+```

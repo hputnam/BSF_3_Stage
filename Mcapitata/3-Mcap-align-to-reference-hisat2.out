@@ -1,0 +1,169 @@
+Loading programs Thu Jun 17 10:18:28 EDT 2021
+Aligning paired end reads Thu Jun 17 10:18:35 EDT 2021
+Starting alignment of sample AH1.fastq.gz Thu Jun 17 10:18:37 EDT 2021
+32518144 reads; of these:
+  32518144 (100.00%) were paired; of these:
+    25609332 (78.75%) aligned concordantly 0 times
+    5837822 (17.95%) aligned concordantly exactly 1 time
+    1070990 (3.29%) aligned concordantly >1 times
+    ----
+    25609332 pairs aligned concordantly 0 times; of these:
+      9072948 (35.43%) aligned discordantly 1 time
+    ----
+    16536384 pairs aligned 0 times concordantly or discordantly; of these:
+      33072768 mates make up the pairs; of these:
+        17456340 (52.78%) aligned 0 times
+        11040782 (33.38%) aligned exactly 1 time
+        4575646 (13.84%) aligned >1 times
+73.16% overall alignment rate
+[bam_sort_core] merging from 20 files and 20 in-memory blocks...
+HISAT2 complete for AH1.fastq.gz Thu Jun 17 18:45:27 EDT 2021
+Starting alignment of sample AH2.fastq.gz Thu Jun 17 18:45:27 EDT 2021
+35732972 reads; of these:
+  35732972 (100.00%) were paired; of these:
+    28962754 (81.05%) aligned concordantly 0 times
+    5691745 (15.93%) aligned concordantly exactly 1 time
+    1078473 (3.02%) aligned concordantly >1 times
+    ----
+    28962754 pairs aligned concordantly 0 times; of these:
+      11718028 (40.46%) aligned discordantly 1 time
+    ----
+    17244726 pairs aligned 0 times concordantly or discordantly; of these:
+      34489452 mates make up the pairs; of these:
+        13634164 (39.53%) aligned 0 times
+        14765945 (42.81%) aligned exactly 1 time
+        6089343 (17.66%) aligned >1 times
+80.92% overall alignment rate
+[bam_sort_core] merging from 20 files and 20 in-memory blocks...
+HISAT2 complete for AH2.fastq.gz Thu Jun 17 19:51:48 EDT 2021
+Starting alignment of sample AH3.fastq.gz Thu Jun 17 19:51:48 EDT 2021
+33039446 reads; of these:
+  33039446 (100.00%) were paired; of these:
+    29015328 (87.82%) aligned concordantly 0 times
+    3409554 (10.32%) aligned concordantly exactly 1 time
+    614564 (1.86%) aligned concordantly >1 times
+    ----
+    29015328 pairs aligned concordantly 0 times; of these:
+      12220328 (42.12%) aligned discordantly 1 time
+    ----
+    16795000 pairs aligned 0 times concordantly or discordantly; of these:
+      33590000 mates make up the pairs; of these:
+        11704417 (34.84%) aligned 0 times
+        15613073 (46.48%) aligned exactly 1 time
+        6272510 (18.67%) aligned >1 times
+82.29% overall alignment rate
+[bam_sort_core] merging from 20 files and 20 in-memory blocks...
+HISAT2 complete for AH3.fastq.gz Thu Jun 17 20:11:57 EDT 2021
+Starting alignment of sample AH4.fastq.gz Thu Jun 17 20:11:57 EDT 2021
+32856911 reads; of these:
+  32856911 (100.00%) were paired; of these:
+    29164183 (88.76%) aligned concordantly 0 times
+    3134120 (9.54%) aligned concordantly exactly 1 time
+    558608 (1.70%) aligned concordantly >1 times
+    ----
+    29164183 pairs aligned concordantly 0 times; of these:
+      11919857 (40.87%) aligned discordantly 1 time
+    ----
+    17244326 pairs aligned 0 times concordantly or discordantly; of these:
+      34488652 mates make up the pairs; of these:
+        13132233 (38.08%) aligned 0 times
+        15209843 (44.10%) aligned exactly 1 time
+        6146576 (17.82%) aligned >1 times
+80.02% overall alignment rate
+[bam_sort_core] merging from 20 files and 20 in-memory blocks...
+HISAT2 complete for AH4.fastq.gz Thu Jun 17 20:37:48 EDT 2021
+Starting alignment of sample AH5.fastq.gz Thu Jun 17 20:37:48 EDT 2021
+31634079 reads; of these:
+  31634079 (100.00%) were paired; of these:
+    28682300 (90.67%) aligned concordantly 0 times
+    2505357 (7.92%) aligned concordantly exactly 1 time
+    446422 (1.41%) aligned concordantly >1 times
+    ----
+    28682300 pairs aligned concordantly 0 times; of these:
+      10502183 (36.62%) aligned discordantly 1 time
+    ----
+    18180117 pairs aligned 0 times concordantly or discordantly; of these:
+      36360234 mates make up the pairs; of these:
+        17680701 (48.63%) aligned 0 times
+        13288034 (36.55%) aligned exactly 1 time
+        5391499 (14.83%) aligned >1 times
+72.05% overall alignment rate
+[bam_sort_core] merging from 20 files and 20 in-memory blocks...
+HISAT2 complete for AH5.fastq.gz Thu Jun 17 20:57:58 EDT 2021
+Starting alignment of sample AH6.fastq.gz Thu Jun 17 20:57:58 EDT 2021
+37110172 reads; of these:
+  37110172 (100.00%) were paired; of these:
+    33452909 (90.14%) aligned concordantly 0 times
+    3101313 (8.36%) aligned concordantly exactly 1 time
+    555950 (1.50%) aligned concordantly >1 times
+    ----
+    33452909 pairs aligned concordantly 0 times; of these:
+      12371557 (36.98%) aligned discordantly 1 time
+    ----
+    21081352 pairs aligned 0 times concordantly or discordantly; of these:
+      42162704 mates make up the pairs; of these:
+        19969459 (47.36%) aligned 0 times
+        15802424 (37.48%) aligned exactly 1 time
+        6390821 (15.16%) aligned >1 times
+73.09% overall alignment rate
+[bam_sort_core] merging from 20 files and 20 in-memory blocks...
+HISAT2 complete for AH6.fastq.gz Thu Jun 17 21:26:03 EDT 2021
+Starting alignment of sample AH7.fastq.gz Thu Jun 17 21:26:03 EDT 2021
+41045332 reads; of these:
+  41045332 (100.00%) were paired; of these:
+    37810545 (92.12%) aligned concordantly 0 times
+    2775521 (6.76%) aligned concordantly exactly 1 time
+    459266 (1.12%) aligned concordantly >1 times
+    ----
+    37810545 pairs aligned concordantly 0 times; of these:
+      8793213 (23.26%) aligned discordantly 1 time
+    ----
+    29017332 pairs aligned 0 times concordantly or discordantly; of these:
+      58034664 mates make up the pairs; of these:
+        42758065 (73.68%) aligned 0 times
+        11052577 (19.04%) aligned exactly 1 time
+        4224022 (7.28%) aligned >1 times
+47.91% overall alignment rate
+[bam_sort_core] merging from 20 files and 20 in-memory blocks...
+HISAT2 complete for AH7.fastq.gz Thu Jun 17 21:47:50 EDT 2021
+Starting alignment of sample AH8.fastq.gz Thu Jun 17 21:47:50 EDT 2021
+38009897 reads; of these:
+  38009897 (100.00%) were paired; of these:
+    32363762 (85.15%) aligned concordantly 0 times
+    4784542 (12.59%) aligned concordantly exactly 1 time
+    861593 (2.27%) aligned concordantly >1 times
+    ----
+    32363762 pairs aligned concordantly 0 times; of these:
+      10268168 (31.73%) aligned discordantly 1 time
+    ----
+    22095594 pairs aligned 0 times concordantly or discordantly; of these:
+      44191188 mates make up the pairs; of these:
+        26259487 (59.42%) aligned 0 times
+        12886038 (29.16%) aligned exactly 1 time
+        5045663 (11.42%) aligned >1 times
+65.46% overall alignment rate
+[bam_sort_core] merging from 20 files and 20 in-memory blocks...
+HISAT2 complete for AH8.fastq.gz Thu Jun 17 22:10:34 EDT 2021
+Starting alignment of sample AH9.fastq.gz Thu Jun 17 22:10:34 EDT 2021
+44246581 reads; of these:
+  44246581 (100.00%) were paired; of these:
+    36109722 (81.61%) aligned concordantly 0 times
+    6829022 (15.43%) aligned concordantly exactly 1 time
+    1307837 (2.96%) aligned concordantly >1 times
+    ----
+    36109722 pairs aligned concordantly 0 times; of these:
+      10825775 (29.98%) aligned discordantly 1 time
+    ----
+    25283947 pairs aligned 0 times concordantly or discordantly; of these:
+      50567894 mates make up the pairs; of these:
+        31953935 (63.19%) aligned 0 times
+        13273435 (26.25%) aligned exactly 1 time
+        5340524 (10.56%) aligned >1 times
+63.89% overall alignment rate
+[bam_sort_core] merging from 40 files and 20 in-memory blocks...
+HISAT2 complete for AH9.fastq.gz Thu Jun 17 22:36:17 EDT 2021
+HISAT2 complete. Now we can will assess the alignment with fastqc. Thu Jun 17 22:36:17 EDT 2021
+Started analysis of AH1.fastq.gz.bam
+Exception in thread "Thread-1" 
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Thread-1"
+slurmstepd: error: *** JOB 1914439 ON n061 CANCELLED AT 2021-06-18T12:36:15 ***

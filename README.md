@@ -17,5 +17,5 @@ NCBI BioProject: PRJNA306839 ([EMBL EBI link](https://www.ebi.ac.uk/ena/browser/
 
 ### Montipora capitata  
 [Data Citation]()  
-NCBI BioProject: PRNJ738963 ([EMBL EBI link](https://www.ebi.ac.uk/ena/browser/view/PRNJ738963))  
+NCBI BioProject: PRNJ738963 ([EMBL EBI link](https://www.ebi.ac.uk/ena/browser/view/PRJNA738963))  
 [Reference Genome:](http://cyanophora.rutgers.edu/montipora/) Shumaker, A., Putnam, H. M., Qiu, H., Price, D. C., Zelzion, E., Harel, A., Wagner, N. E., Gates, R. D., Yoon, H. S. and Bhattacharya, D. (2019). Genome analysis of the rice coral Montipora capitata. *Sci. Rep.* **9**, 2571. Doi 10.1038/s41598-019-39274-3

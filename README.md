@@ -1,4 +1,4 @@
-skeltal proteome
+skeletal proteome
 quantitative proteomics
 phosphoproteome
 transcrioptome
